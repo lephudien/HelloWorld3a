@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDB3.MSSQL", "AdapterDB3.MSSQL\AdapterDB3.MSSQL.csproj", "{0576E378-8583-467A-BD7A-B2F777DCEF7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterDB3.MSSQL.UnitTests", "AdapterDB3.MSSQL.UniTests\AdapterDB3.MSSQL.UnitTests.csproj", "{BC2B215F-9A44-4E63-ABDE-D1F9186BEF60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0576E378-8583-467A-BD7A-B2F777DCEF7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0576E378-8583-467A-BD7A-B2F777DCEF7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0576E378-8583-467A-BD7A-B2F777DCEF7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0576E378-8583-467A-BD7A-B2F777DCEF7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2B215F-9A44-4E63-ABDE-D1F9186BEF60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2B215F-9A44-4E63-ABDE-D1F9186BEF60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2B215F-9A44-4E63-ABDE-D1F9186BEF60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2B215F-9A44-4E63-ABDE-D1F9186BEF60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D484A7FD-192F-4A7A-B71C-284942843FF6}
+	EndGlobalSection
+EndGlobal
