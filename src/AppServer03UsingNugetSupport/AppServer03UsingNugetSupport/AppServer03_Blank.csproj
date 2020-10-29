@@ -33,8 +33,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AdapterDB3.MSSQL, Version=0.1.0.4, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AdapterDB3.MSSQL.0.1.0.4\lib\net472\AdapterDB3.MSSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.2.0.11\lib\net45\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.122.19.1, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>packages\Oracle.ManagedDataAccess.19.9.0\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Data.SqlClient.4.8.2\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +80,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,37 +94,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="AdapterDB3.MSSQL">
-      <Version>0.1.0.3</Version>
-    </PackageReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- NAT pokus 01 TestTarget START-->
-  <PropertyGroup>
-    <IndSoftLibraryDevDropFolder>S:\TestLib</IndSoftLibraryDevDropFolder>
-  </PropertyGroup>
-  <Target Name="MujTest" BeforeTargets="ResolveAssemblyReferences" DependsOnTargets="ExpandSDKReferences">
-    <Message Importance="High"  Text="Ahoj"/>
-    <ItemGroup>
-      <!-- Remove any references which we have added as explicit reference so that we do not get duplicates. We need to make sure we do not have duplicates
-         because this confuses the IDE  when it tries to compare the list of references passed in to the list of resolved references. If it does not match then the
-         ide will show one of the references as not resolved, this will not break the build but is a display issue -->
-      <Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
-      <Reference Include="S:\TestLib\*.DLL"/>
-    </ItemGroup>
-    <Message Importance="High" Text="Batched: %(Reference.Identity)"/>
-  </Target>
-  <!-- NAT pokus 01 TestTarget END-->
-  <!-- NAT pokus 02 TestTarget START-->
-  <PropertyGroup>
-    <IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>S:\TestLib\_temp</IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>
-  </PropertyGroup>
-  <Import Project="s:\CEPS\DispecerskyDenik\v1.0\Main\packages\IndSoft.NuGet.Support.1.0.7131.13344\MSBuild\MSBuild.IndSoft.NuGet.LibraryDevelopment2.targets"/>
-  <!--NAT pokus 02 TestTarget END-->
-	<!-- NAT pokus 03 TestTarget START-->
-	<Target Name="MujTest3" AfterTargets="AfterBuild">
-		<Message Importance="High"  Text="Ahoj3"/>
-	</Target>
-	<!--NAT pokus 03 TestTarget END-->
 </Project>

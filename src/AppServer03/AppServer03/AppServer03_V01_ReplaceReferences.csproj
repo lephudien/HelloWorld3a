@@ -101,15 +101,4 @@
     <Message Importance="High" Text="Batched: %(Reference.Identity)"/>
   </Target>
   <!-- NAT pokus 01 TestTarget END-->
-  <!-- NAT pokus 02 TestTarget START-->
-  <PropertyGroup>
-    <IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>S:\TestLib\_temp</IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>
-  </PropertyGroup>
-  <Import Project="s:\CEPS\DispecerskyDenik\v1.0\Main\packages\IndSoft.NuGet.Support.1.0.7131.13344\MSBuild\MSBuild.IndSoft.NuGet.LibraryDevelopment2.targets"/>
-  <!--NAT pokus 02 TestTarget END-->
-	<!-- NAT pokus 03 TestTarget START-->
-	<Target Name="MujTest3" AfterTargets="AfterBuild">
-		<Message Importance="High"  Text="Ahoj3"/>
-	</Target>
-	<!--NAT pokus 03 TestTarget END-->
 </Project>

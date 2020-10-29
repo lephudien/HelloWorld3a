@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<IndSoftLibraryDevDropFolder>S:\TestLib</IndSoftLibraryDevDropFolder>
+		  
+		
+	</PropertyGroup>
+
+	<Target Name="MujTest" BeforeTargets="ResolveAssemblyReferences" DependsOnTargets="ExpandSDKReferences">
+ 		  <Message Importance="High"  Text="Ahoj"/>
+		 <ItemGroup>
+      <!-- Remove any references which we have added as explicit reference so that we do not get duplicates. We need to make sure we do not have duplicates
+             because this confuses the IDE  when it tries to compare the list of references passed in to the list of resolved references. If it does not match then the
+             ide will show one of the references as not resolved, this will not break the build but is a display issue -->
+      <Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
+      <Reference Include="S:\TestLib\*.DLL"/>
+		</ItemGroup>
+	  <Message Importance="High" Text="Batched: %(Reference.Identity)"/>
+    
+  </Target>
+	
+</Project>

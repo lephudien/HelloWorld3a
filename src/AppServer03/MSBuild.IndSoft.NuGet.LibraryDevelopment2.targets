@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!-- konfiguraci nacita nadrazeny skript MSBuild.IndSoft.NuGet.targets -->
+
+
+
+  <Target
+      Name="IndSoftCopyFilesToLibraryDevelopmentTemporaryDropFolder"
+      AfterTargets="CopyFilesToOutputDirectory"
+      >
+    <!--This task is copy of CopyFilesToOutputDirectory from C:\Program Files (x86)\MSBuild\12.0\Bin\Microsoft.Common.CurrentVersion.targets
+    * with changed paths, removed modifiyng output variables.
+    -->
+    <MakeDir Directories="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)" Condition="!Exists('$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)')" />
+
+    <!-- Copy the build product (.dll or .exe). -->
+    <Copy
+        SourceFiles="@(IntermediateAssembly)"
+        DestinationFolder="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)"
+        SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyFilesToOutputDirectoryIfPossible)"
+        Condition="'$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)' != 'true'"
+            >
+
+
+    </Copy>
+
+    <Message Importance="High" Text="$(MSBuildProjectName) -&gt; $(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)" Condition="'$(CopyBuildOutputToOutputDirectory)' == 'true' and '$(SkipCopyBuildProduct)'!='true'" />
+
+    <!-- Copy the additional modules. -->
+    <Copy
+        SourceFiles="@(AddModules)"
+        DestinationFolder="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)"
+        SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyAdditionalFilesIfPossible)"
+        Condition="'@(AddModules)' != ''"
+            >
+
+    </Copy>
+
+    <!-- Copy the serialization assembly if it exists. -->
+    <Copy
+        SourceFiles="$(IntermediateOutputPath)$(_SGenDllName)"
+        DestinationFiles="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)$(_SGenDllName)"
+        SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyFilesToOutputDirectoryIfPossible)"
+        Condition="'$(_SGenDllCreated)'=='true'">
+
+
+    </Copy>
+
+    <!-- Copy the debug information file (.pdb), if any -->
+    <Copy
+        SourceFiles="@(_DebugSymbolsIntermediatePath)"
+        DestinationFolder="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)"
+        SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyFilesToOutputDirectoryIfPossible)"
+        Condition="'$(_DebugSymbolsProduced)'=='true' and '$(SkipCopyingSymbolsToOutputDirectory)' != 'true' and '$(CopyOutputSymbolsToOutputDirectory)'=='true'">
+
+
+    </Copy>
+
+    <!-- Copy the resulting XML documentation file, if any. -->
+    <Copy
+        SourceFiles="@(DocFileItem)"
+         DestinationFolder="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)"
+       SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyFilesToOutputDirectoryIfPossible)"
+        Condition="'$(_DocumentationFileProduced)'=='true'">
+
+
+    </Copy>
+
+    <!-- Copy satellite assemblies. -->
+    <Copy
+        SourceFiles="@(IntermediateSatelliteAssembliesWithTargetPath)"
+        DestinationFiles="@(IntermediateSatelliteAssembliesWithTargetPath->'$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)%(Culture)\$(TargetName).resources.dll')"
+        SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyFilesToOutputDirectoryIfPossible)"
+        Condition="'@(IntermediateSatelliteAssembliesWithTargetPath)' != ''"
+            >
+
+
+    </Copy>
+
+    <!--
+        Copy COM reference wrappers, isolated COM references, COM references included by
+        native (manifest) references, native (manifest) reference files themselves.
+        -->
+    <Copy
+        SourceFiles="@(ReferenceComWrappersToCopyLocal); @(ResolvedIsolatedComModules); @(_DeploymentLooseManifestFile); @(NativeReferenceFile)"
+        DestinationFolder="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)"
+        SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyAdditionalFilesIfPossible)"
+        Condition="'@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' "
+            >
+
+    </Copy>
+
+    <!-- Copy the build product of WinMDExp. -->
+    <Copy
+        SourceFiles="@(WinMDExpArtifacts)"
+        DestinationFolder="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)"
+        SkipUnchangedFiles="$(SkipCopyUnchangedFiles)"
+        OverwriteReadOnlyFiles="$(OverwriteReadOnlyFiles)"
+        Retries="$(CopyRetryCount)"
+        RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)"
+        UseHardlinksIfPossible="$(CreateHardLinksForCopyFilesToOutputDirectoryIfPossible)"
+        Condition="'$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != ''"
+            >
+    </Copy>
+
+    <Message Importance="High" Text="$(MSBuildProjectName) -&gt; $([System.IO.Path]::GetFullPath('$(_WindowsMetadataOutputPath)'))" Condition="'$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != ''" />
+
+  </Target>
+
+
+  <Target Name="IndSoftCopyToDevLibrary" AfterTargets="AfterBuild">
+    <Message Text="Copying libraries to dropfolder $(IndSoftLibraryDevDropFolder)" Importance="High" />
+    <ItemGroup>
+      <LibraryDevFiles Include="$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)\*.*"/>
+    </ItemGroup>
+    <MakeDir Directories="$(IndSoftLibraryDevDropFolder)" Condition="!Exists('$(IndSoftLibraryDevDropFolder)')" />
+    <Copy SourceFiles="@(LibraryDevFiles)" DestinationFolder="$(IndSoftLibraryDevDropFolder)\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  </Target>
+
+
+  <Target Name="IndSoftUseLibraryDevDropFolder">
+    <PropertyGroup>
+      <AssemblySearchPaths>$(IndSoftLibraryDevDropFolder);$(AssemblySearchPaths)</AssemblySearchPaths>
+    </PropertyGroup>
+  </Target>
+</Project>

@@ -85,31 +85,11 @@
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- NAT pokus 01 TestTarget START-->
-  <PropertyGroup>
-    <IndSoftLibraryDevDropFolder>S:\TestLib</IndSoftLibraryDevDropFolder>
-  </PropertyGroup>
-  <Target Name="MujTest" BeforeTargets="ResolveAssemblyReferences" DependsOnTargets="ExpandSDKReferences">
-    <Message Importance="High"  Text="Ahoj"/>
-    <ItemGroup>
-      <!-- Remove any references which we have added as explicit reference so that we do not get duplicates. We need to make sure we do not have duplicates
-         because this confuses the IDE  when it tries to compare the list of references passed in to the list of resolved references. If it does not match then the
-         ide will show one of the references as not resolved, this will not break the build but is a display issue -->
-      <Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
-      <Reference Include="S:\TestLib\*.DLL"/>
-    </ItemGroup>
-    <Message Importance="High" Text="Batched: %(Reference.Identity)"/>
+  <Import Project="..\..\..\packages\IndSoft.NuGet.Support.1.0.7131.13344\build\IndSoft.NuGet.Support.targets" Condition="Exists('..\..\..\packages\IndSoft.NuGet.Support.1.0.7131.13344\build\IndSoft.NuGet.Support.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\..\packages\IndSoft.NuGet.Support.1.0.7131.13344\build\IndSoft.NuGet.Support.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\IndSoft.NuGet.Support.1.0.7131.13344\build\IndSoft.NuGet.Support.targets'))" />
   </Target>
-  <!-- NAT pokus 01 TestTarget END-->
-  <!-- NAT pokus 02 TestTarget START-->
-  <PropertyGroup>
-    <IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>S:\TestLib\_temp</IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>
-  </PropertyGroup>
-  <Import Project="s:\CEPS\DispecerskyDenik\v1.0\Main\packages\IndSoft.NuGet.Support.1.0.7131.13344\MSBuild\MSBuild.IndSoft.NuGet.LibraryDevelopment2.targets"/>
-  <!--NAT pokus 02 TestTarget END-->
-	<!-- NAT pokus 03 TestTarget START-->
-	<Target Name="MujTest3" AfterTargets="AfterBuild">
-		<Message Importance="High"  Text="Ahoj3"/>
-	</Target>
-	<!--NAT pokus 03 TestTarget END-->
 </Project>
