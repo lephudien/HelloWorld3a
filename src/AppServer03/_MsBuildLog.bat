@@ -1,4 +1,4 @@
 msbuild -t:restore
-msbuild AppServer03.sln -flp:logfile=MyProjectOutput.log;verbosity=diagnostic 
+msbuild AppServer03.sln -flp:logfile=MyProjectOutput.txt;verbosity=diagnostic 
 
 pause
