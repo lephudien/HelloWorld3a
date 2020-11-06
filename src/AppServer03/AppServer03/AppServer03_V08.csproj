@@ -88,6 +88,7 @@
   <!-- NAT pokus 01 TestTarget START-->
   <PropertyGroup>
     <IndSoftLibraryDevFolder>S:\TestLib</IndSoftLibraryDevFolder>
+		<IndSoftLibraryDevFolderNoExist>S:\NoExist</IndSoftLibraryDevFolderNoExist>
   </PropertyGroup>
 	<Target Name="MujTest01BeforeReplacingReferences" BeforeTargets="ResolveAssemblyReferences" DependsOnTargets="ExpandSDKReferences">
 		<Message Importance="High"  Text="Ahoj, MujTest01BeforeReplacingReferences"/>
@@ -102,26 +103,6 @@
 		</IndSoftReplaceReference>
 		<Message Importance="High" Text="prop:ReferencePathNew=$(ReferencePathNewFromTask)" />
   </Target>
-	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftMakeDir" AssemblyFile="S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll"/>
-	<PropertyGroup>
-		<OutputDirectory>\Output\</OutputDirectory>
-  </PropertyGroup>
-	<Target Name="CreateDirectories" AfterTargets="MujTest01BeforeReplacingReferences">
-			<IndSoftMakeDir Directories="$(OutputDirectory)"/>
-	</Target>
-	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftReplaceReference2" AssemblyFile="S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll"/>
-	<Target Name="MujTest01xTestTask" AfterTargets="MujTest01zTestTask">
-		<Message Importance="High"  Text="MujTest01xTestTask"/>
-		<IndSoftReplaceReference2 ReferencesIn="@(Reference)" FolderLibraryDev="$(IndSoftLibraryDevFolder)" FolderNeedReplaceMask=".nuget\packages">
-			<Output TaskParameter="OneReferenceOut" PropertyName="OneReferenceOutFromTask" />
-		</IndSoftReplaceReference2>
-		<Message Importance="High" Text="prop:OneReferenceOutFromTask=$(OneReferenceOutFromTask)" />
-    <ItemGroup>
-			<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
-			<Reference Include="$(OneReferenceOutFromTask)"/>
-		</ItemGroup>		
-  </Target>
-	
 	<!---
   <Target Name="MujTest01yTestTask" AfterTargets="MujTest01BeforeReplacingReferences">
 		<Message Importance="High"  Text="MujTest01yTestTask"/>
@@ -147,83 +128,18 @@
     </ItemGroup>
 		-->
 	</Target>
-	<ItemGroup>
-    <TestItem Include="test1" />
-    <TestItem Include="test2" />
-    <TestItem Include="test3" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <TestProperty>Property Value</TestProperty>
-  </PropertyGroup>
-
-  <Target Name="TestMessage" AfterTargets="Build" >
-
-    <!-- Use $(Property Name) to reference a property -->
-    <Message Text="$(TestProperty)" Importance="high"/>
-
-    <!-- Use @(Item Name) to output a semi-colon
-         separated list of items on one line      -->
-    <Message Text="@(TestItem)" Importance="high"/>
-
-    <!-- Use %(Item Name.Metadata Property Name) to 
-         call the Message task once for each item.   -->
-    <!-- This will output each item on a separate line -->
-    <Message Text="TestItemOutput: %(TestItem.Identity)" Importance="high"/>
-
-  </Target>
-	<PropertyGroup>
-		<IndSoftReplaceReferenceMask>.nuget\packages\</IndSoftReplaceReferenceMask>
-		<IndSoftReplaceReferenceNewFolder>S:\NoExist</IndSoftReplaceReferenceNewFolder>
-	</PropertyGroup>
 	<Target Name="TestUpdateMetaData" AfterTargets="MujTest04ShowFinalReferences">
 		<Message Importance="High"  Text="TestUpdateMetaData"/>
 		<ItemGroup>
-      <Reference Update="@(Reference)"  Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))">
+      <Reference Update="@(Reference)"  Condition="'%(FullPath)' == 'C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll'">
 			  <!-- <Message Text="FullPath: "/> -->
-        <NewReferencePath>$(IndSoftReplaceReferenceNewFolder)\%(FileName)%(Extension)</NewReferencePath>
+        <NewReferencePath>$(IndSoftLibraryDevFolderNoExist)\%(FileName)%(Extension)</NewReferencePath>
       </Reference>  
     </ItemGroup>
-		<Message Importance="High" Text="prop:ReferencePathNew2=$(ReferencePathNewFromTask2)" />
-	</Target>
-	<Target Name="WriteCollectionToFileAll" AfterTargets="MujTest04ShowFinalReferences">
-    <WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileAll.txt" Lines="@(Reference)" Overwrite="true"/>
-	</Target>
-	<Target Name="WriteCollectionToFileFiltr" AfterTargets="MujTest04ShowFinalReferences">
-		<WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="false" Condition="%(FullPath) == 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' OR %(FullPath) == 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll'"/>
-	  <!--
-		<WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="false" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
-    <WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="true" Condition="%(FullPath) == 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll'"/>
-		<WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="true" Condition="%(FullPath) == 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' OR %(FullPath) == 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll'"/>
-		-->
-	</Target>
-	<Target Name="ReferenceRemoveTest" AfterTargets="WriteCollectionToFileFiltr">
-		<ItemGroup>
-			<!--
-			<Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
-			<Reference Remove="**"/>
-			-->
-			<!--
-				<Reference Include="C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll"/>
-			-->
-			<!--
-			<Reference Include="C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll"/>
-			-->
-			<!-- FUNGUJICI
-				<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
-				<Reference Include="S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll"/>
-			-->
-		</ItemGroup>
-	</Target>
-	<Target Name="WriteCollectionToFileAllAfterRemove" AfterTargets="ReferenceRemoveTest">
-    <WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileAllAfterRemove.txt" Lines="@(Reference)" Overwrite="true"/>
 	</Target>
 	<Target Name="MujTest04ShowFinalReferences2" AfterTargets="TestUpdateMetaData">
 		<Message Importance="High"  Text="MujTest04ShowFinalReferences"/>
 		<Message Importance="High" Text="Pouzite reference final2: %(Reference.FullPath) + %(Reference.NewReferencePath)"/>
-	</Target>
-	<Target Name="MujTest04ShowFinalReferences3" AfterTargets="MujTest04ShowFinalReferences2">
-			<Message Importance="High" Text="Pouzite reference final3: %(Reference.FullPath) + %(Reference.NewReferencePath)"/>
 	</Target>
 	<Target Name="MujTest02ReplacingReferences" AfterTargets="MujTest01BeforeReplacingReferences">
     <Message Importance="High"  Text="Ahoj, MujTest02ReplacingReferences"/>
@@ -250,9 +166,7 @@
 			<Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
 			<Reference Include="S:\TestLib\*.DLL"/>
 			-->
-			<!--
 			<Reference Include="$(IndSoftLibraryDevFolder)\*.DLL"/>
-			-->
     </ItemGroup>
 	</Target>
 	<Target Name="MujTest04ShowFinalReferences" AfterTargets="MujTest03AddReferences">

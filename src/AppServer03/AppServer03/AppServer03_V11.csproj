@@ -109,18 +109,6 @@
 	<Target Name="CreateDirectories" AfterTargets="MujTest01BeforeReplacingReferences">
 			<IndSoftMakeDir Directories="$(OutputDirectory)"/>
 	</Target>
-	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftReplaceReference2" AssemblyFile="S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll"/>
-	<Target Name="MujTest01xTestTask" AfterTargets="MujTest01zTestTask">
-		<Message Importance="High"  Text="MujTest01xTestTask"/>
-		<IndSoftReplaceReference2 ReferencesIn="@(Reference)" FolderLibraryDev="$(IndSoftLibraryDevFolder)" FolderNeedReplaceMask=".nuget\packages">
-			<Output TaskParameter="OneReferenceOut" PropertyName="OneReferenceOutFromTask" />
-		</IndSoftReplaceReference2>
-		<Message Importance="High" Text="prop:OneReferenceOutFromTask=$(OneReferenceOutFromTask)" />
-    <ItemGroup>
-			<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
-			<Reference Include="$(OneReferenceOutFromTask)"/>
-		</ItemGroup>		
-  </Target>
 	
 	<!---
   <Target Name="MujTest01yTestTask" AfterTargets="MujTest01BeforeReplacingReferences">
@@ -203,15 +191,13 @@
 			<Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
 			<Reference Remove="**"/>
 			-->
+			<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
 			<!--
 				<Reference Include="C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll"/>
 			-->
+			<Reference Include="S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll"/>
 			<!--
 			<Reference Include="C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll"/>
-			-->
-			<!-- FUNGUJICI
-				<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
-				<Reference Include="S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll"/>
 			-->
 		</ItemGroup>
 	</Target>
