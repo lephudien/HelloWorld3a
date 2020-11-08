@@ -1,0 +1,14 @@
+System
+System.Core
+System.Xml.Linq
+System.Data.DataSetExtensions
+Microsoft.CSharp
+System.Net.Http
+System.Configuration
+System.Web
+System.Data
+System.Xml
+mscorlib
+S:\TestLib\log4net.dll
+S:\TestLib\Oracle.ManagedDataAccess.dll
+S:\TestLib\System.Data.SqlClient.dll

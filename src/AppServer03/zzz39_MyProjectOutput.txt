@@ -1,4 +1,4 @@
-Build started 08.11.2020 11:19:37.
+Build started 08.11.2020 10:58:26.
 Environment at start of build:
 ALLUSERSPROFILE = C:\ProgramData
 APPDATA = C:\Users\tuana\AppData\Roaming
@@ -1196,9 +1196,8 @@ ImportUserLocationsByWildcardBeforeMicrosoftNetFrameworkTargets = true
 ImportXamlTargets = true
 INCLUDE = C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.27.29110\ATLMFC\include;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools\MSVC\14.27.29110\include;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt
 IncludeFrameworkReferencesFromNuGet = true
-IndSoftLibraryDevDropFolder = S:\TestLib
+IndSoftLibraryDevFolder = S:\TestLib
 IndSoftNugetCacheFolderMask = .nuget\packages
-IndSoftNuGetLibraryDevelopmentTemporaryDropFolder = S:\TestLib\_temp
 InnerBuildProperty = TargetFramework
 InnerBuildPropertyValues = TargetFrameworks
 IntermediateOutputPath = obj\Debug\
@@ -1237,7 +1236,7 @@ MicrosoftNETBuildExtensionsTargets = C:\Program Files (x86)\Microsoft Visual Stu
 MicrosoftNETBuildExtensionsTasksAssembly = C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\\tools\net472\Microsoft.NET.Build.Extensions.Tasks.dll
 MOZ_PLUGIN_PATH = C:\Program Files (x86)\Foxit Software\Foxit Reader\plugins\
 MsAppxPackageTargets = C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\VisualStudio\v16.0\AppxPackage\Microsoft.AppXPackage.Targets
-MSBuildAllProjects = C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Microsoft.Common.targets\ImportBefore\MSBuild.IndSoft.NuGet.ReplaceNugetReferences.targets;;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\AppServer03.csproj.nuget.g.props;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Xaml.targets;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\NuGet\16.0\Microsoft.NuGet.targets;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\AppServer03.csproj.nuget.g.targets
+MSBuildAllProjects = s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj;;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\AppServer03.csproj.nuget.g.props;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Xaml.targets;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets;C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\NuGet\16.0\Microsoft.NuGet.targets;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\AppServer03.csproj.nuget.g.targets
 MSBuildAssemblyVersion = 16.0
 MSBuildBinPath = C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin
 MSBuildDisableNodeReuse = 1
@@ -2337,419 +2336,36 @@ Added Item(s):
 Set Property: DTARUseReferencesFromProject=true
 Task "CreateItem" skipped, due to false condition; ('@(_NuGetContentItems)' != '') was evaluated as ('' != '').
 Done building target "ResolveNuGetPackageAssets" in project "AppServer03.csproj".: (TargetId:20)
-Target "ExpandSDKReferences" skipped. Previously built successfully.
-Target "ReplaceNugetReferences: (TargetId:21)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Microsoft.Common.targets\ImportBefore\MSBuild.IndSoft.NuGet.ReplaceNugetReferences.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveAssemblyReferences" depends on it):
-Task "Message" (TaskId:12)
-  Task Parameter:Importance=High (TaskId:12)
-  Task Parameter:Text=ReplaceNugetReferences (TaskId:12)
-  ReplaceNugetReferences (TaskId:12)
-Done executing task "Message". (TaskId:12)
-Task "Message" (TaskId:13)
-  Task Parameter:Importance=High (TaskId:13)
-  Task Parameter:Text=Pouzite reference puvodni: System.Deployment (TaskId:13)
-  Pouzite reference puvodni: System.Deployment (TaskId:13)
-Done executing task "Message". (TaskId:13)
-Task "Message" (TaskId:14)
-  Task Parameter:Importance=High (TaskId:14)
-  Task Parameter:Text=Pouzite reference puvodni: System.Drawing (TaskId:14)
-  Pouzite reference puvodni: System.Drawing (TaskId:14)
-Done executing task "Message". (TaskId:14)
-Task "Message" (TaskId:15)
-  Task Parameter:Importance=High (TaskId:15)
-  Task Parameter:Text=Pouzite reference puvodni: System.Windows.Forms (TaskId:15)
-  Pouzite reference puvodni: System.Windows.Forms (TaskId:15)
-Done executing task "Message". (TaskId:15)
-Task "Message" (TaskId:16)
-  Task Parameter:Importance=High (TaskId:16)
-  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll (TaskId:16)
-  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll (TaskId:16)
-Done executing task "Message". (TaskId:16)
-Task "Message" (TaskId:17)
-  Task Parameter:Importance=High (TaskId:17)
-  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll (TaskId:17)
-  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll (TaskId:17)
-Done executing task "Message". (TaskId:17)
-Task "Message" (TaskId:18)
-  Task Parameter:Importance=High (TaskId:18)
-  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll (TaskId:18)
-  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll (TaskId:18)
-Done executing task "Message". (TaskId:18)
-Task "Message" (TaskId:19)
-  Task Parameter:Importance=High (TaskId:19)
-  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll (TaskId:19)
-  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll (TaskId:19)
-Done executing task "Message". (TaskId:19)
-Task "Message" (TaskId:20)
-  Task Parameter:Importance=High (TaskId:20)
-  Task Parameter:Text=Pouzite reference puvodni: Microsoft.CSharp (TaskId:20)
-  Pouzite reference puvodni: Microsoft.CSharp (TaskId:20)
-Done executing task "Message". (TaskId:20)
-Task "Message" (TaskId:21)
-  Task Parameter:Importance=High (TaskId:21)
-  Task Parameter:Text=Pouzite reference puvodni: System (TaskId:21)
-  Pouzite reference puvodni: System (TaskId:21)
-Done executing task "Message". (TaskId:21)
-Task "Message" (TaskId:22)
-  Task Parameter:Importance=High (TaskId:22)
-  Task Parameter:Text=Pouzite reference puvodni: System.Configuration (TaskId:22)
-  Pouzite reference puvodni: System.Configuration (TaskId:22)
-Done executing task "Message". (TaskId:22)
-Task "Message" (TaskId:23)
-  Task Parameter:Importance=High (TaskId:23)
-  Task Parameter:Text=Pouzite reference puvodni: System.Core (TaskId:23)
-  Pouzite reference puvodni: System.Core (TaskId:23)
-Done executing task "Message". (TaskId:23)
-Task "Message" (TaskId:24)
-  Task Parameter:Importance=High (TaskId:24)
-  Task Parameter:Text=Pouzite reference puvodni: System.Data (TaskId:24)
-  Pouzite reference puvodni: System.Data (TaskId:24)
-Done executing task "Message". (TaskId:24)
-Task "Message" (TaskId:25)
-  Task Parameter:Importance=High (TaskId:25)
-  Task Parameter:Text=Pouzite reference puvodni: System.Data.DataSetExtensions (TaskId:25)
-  Pouzite reference puvodni: System.Data.DataSetExtensions (TaskId:25)
-Done executing task "Message". (TaskId:25)
-Task "Message" (TaskId:26)
-  Task Parameter:Importance=High (TaskId:26)
-  Task Parameter:Text=Pouzite reference puvodni: System.Net.Http (TaskId:26)
-  Pouzite reference puvodni: System.Net.Http (TaskId:26)
-Done executing task "Message". (TaskId:26)
-Task "Message" (TaskId:27)
-  Task Parameter:Importance=High (TaskId:27)
-  Task Parameter:Text=Pouzite reference puvodni: System.Web (TaskId:27)
-  Pouzite reference puvodni: System.Web (TaskId:27)
-Done executing task "Message". (TaskId:27)
-Task "Message" (TaskId:28)
-  Task Parameter:Importance=High (TaskId:28)
-  Task Parameter:Text=Pouzite reference puvodni: System.Xml (TaskId:28)
-  Pouzite reference puvodni: System.Xml (TaskId:28)
-Done executing task "Message". (TaskId:28)
-Task "Message" (TaskId:29)
-  Task Parameter:Importance=High (TaskId:29)
-  Task Parameter:Text=Pouzite reference puvodni: System.Xml.Linq (TaskId:29)
-  Pouzite reference puvodni: System.Xml.Linq (TaskId:29)
-Done executing task "Message". (TaskId:29)
-Task "Message" (TaskId:30)
-  Task Parameter:Importance=High (TaskId:30)
-  Task Parameter:Text=Pouzite reference puvodni: mscorlib (TaskId:30)
-  Pouzite reference puvodni: mscorlib (TaskId:30)
-Done executing task "Message". (TaskId:30)
-Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "WriteLinesToFile" (TaskId:31)
-  Task Parameter:File=s:\GitHub03\HelloWorld3a\src\AppServer03\References01BeforeReplacing.txt (TaskId:31)
-  Task Parameter:
-      Lines=
-          System.Deployment
-          System.Drawing
-          System.Windows.Forms
-          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
-          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
-          C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
-          C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
-          Microsoft.CSharp
-          System
-          System.Configuration
-          System.Core
-          System.Data
-          System.Data.DataSetExtensions
-          System.Net.Http
-          System.Web
-          System.Xml
-          System.Xml.Linq
-          mscorlib (TaskId:31)
-  Task Parameter:Overwrite=True (TaskId:31)
-Done executing task "WriteLinesToFile". (TaskId:31)
-Using "IndSoftReplaceNugetReferences" task from assembly "S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll".
-Task "IndSoftReplaceNugetReferences" (TaskId:32)
-  Task Parameter:
-      ReferencesIn=
-          System.Deployment
-          System.Drawing
-          System.Windows.Forms
-          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
-                  NuGetIsFrameworkReference=false
-                  NuGetPackageId=AdapterDB3.MSSQL
-                  NuGetPackageVersion=0.1.0.3
-                  NuGetSourceType=Package
-                  Private=false
-          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
-                  NuGetIsFrameworkReference=false
-                  NuGetPackageId=log4net
-                  NuGetPackageVersion=2.0.11
-                  NuGetSourceType=Package
-                  Private=false
-          C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
-                  NuGetIsFrameworkReference=false
-                  NuGetPackageId=Oracle.ManagedDataAccess
-                  NuGetPackageVersion=19.9.0
-                  NuGetSourceType=Package
-                  Private=false
-          C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
-                  NuGetIsFrameworkReference=false
-                  NuGetPackageId=System.Data.SqlClient
-                  NuGetPackageVersion=4.8.2
-                  NuGetSourceType=Package
-                  Private=false
-          Microsoft.CSharp
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Configuration
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Core
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Data
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Data.DataSetExtensions
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Net.Http
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Web
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Xml
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          System.Xml.Linq
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          mscorlib
-                  NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package (TaskId:32)
-  Task Parameter:FolderLibraryDev=S:\TestLib (TaskId:32)
-  Task Parameter:FolderNugetCacheNeedReplaceMask=.nuget\packages (TaskId:32)
-  ReferencePathOrg: 'System.Deployment' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Drawing' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Windows.Forms' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll' (TaskId:32)
-  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' (TaskId:32)
-  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll' (TaskId:32)
-  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll' (TaskId:32)
-  ReferencePathOrg: 'Microsoft.CSharp' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Configuration' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Core' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Data' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Data.DataSetExtensions' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Net.Http' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Web' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Xml' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'System.Xml.Linq' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  ReferencePathOrg: 'mscorlib' (TaskId:32)
-  FolderNeedReplaceMask: '.nuget\packages' (TaskId:32)
-  FolderLibraryDev: 'S:\TestLib' (TaskId:32)
-  Final oneReferenceOut: 'S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll' (TaskId:32)
-  Output Property: ReferencesOutFromTask=S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll (TaskId:32)
-Done executing task "IndSoftReplaceNugetReferences". (TaskId:32)
-Task "Message" (TaskId:33)
-  Task Parameter:Importance=High (TaskId:33)
-  Task Parameter:Text=OutputResults_ReferencesOutFromTask=S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll (TaskId:33)
-  OutputResults_ReferencesOutFromTask=S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll (TaskId:33)
-Done executing task "Message". (TaskId:33)
-Removed Item(s): 
-    Reference=
+Target "ImplicitlyExpandNETStandardFacades: (TargetId:21)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.NETFramework.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveAssemblyReferences" depends on it):
+Added Item(s): 
+    _CandidateNETStandardReferences=
+        System.Deployment
+        System.Drawing
+        System.Windows.Forms
         C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
                 NuGetIsFrameworkReference=false
                 NuGetPackageId=AdapterDB3.MSSQL
                 NuGetPackageVersion=0.1.0.3
                 NuGetSourceType=Package
                 Private=false
-Removed Item(s): 
-    Reference=
         C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
                 NuGetIsFrameworkReference=false
                 NuGetPackageId=log4net
                 NuGetPackageVersion=2.0.11
                 NuGetSourceType=Package
                 Private=false
-Removed Item(s): 
-    Reference=
         C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
                 NuGetIsFrameworkReference=false
                 NuGetPackageId=Oracle.ManagedDataAccess
                 NuGetPackageVersion=19.9.0
                 NuGetSourceType=Package
                 Private=false
-Removed Item(s): 
-    Reference=
         C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
                 NuGetIsFrameworkReference=false
                 NuGetPackageId=System.Data.SqlClient
                 NuGetPackageVersion=4.8.2
                 NuGetSourceType=Package
                 Private=false
-Added Item(s): 
-    Reference=
-        S:\TestLib\AdapterDB3.MSSQL.dll
-        S:\TestLib\log4net.dll
-        S:\TestLib\Oracle.ManagedDataAccess.dll
-        S:\TestLib\System.Data.SqlClient.dll
-Task "Message" (TaskId:34)
-  Task Parameter:Importance=High (TaskId:34)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Deployment (TaskId:34)
-  Nove reference po nahrazeni: System.Deployment (TaskId:34)
-Done executing task "Message". (TaskId:34)
-Task "Message" (TaskId:35)
-  Task Parameter:Importance=High (TaskId:35)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Drawing (TaskId:35)
-  Nove reference po nahrazeni: System.Drawing (TaskId:35)
-Done executing task "Message". (TaskId:35)
-Task "Message" (TaskId:36)
-  Task Parameter:Importance=High (TaskId:36)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Windows.Forms (TaskId:36)
-  Nove reference po nahrazeni: System.Windows.Forms (TaskId:36)
-Done executing task "Message". (TaskId:36)
-Task "Message" (TaskId:37)
-  Task Parameter:Importance=High (TaskId:37)
-  Task Parameter:Text=Nove reference po nahrazeni: Microsoft.CSharp (TaskId:37)
-  Nove reference po nahrazeni: Microsoft.CSharp (TaskId:37)
-Done executing task "Message". (TaskId:37)
-Task "Message" (TaskId:38)
-  Task Parameter:Importance=High (TaskId:38)
-  Task Parameter:Text=Nove reference po nahrazeni: System (TaskId:38)
-  Nove reference po nahrazeni: System (TaskId:38)
-Done executing task "Message". (TaskId:38)
-Task "Message" (TaskId:39)
-  Task Parameter:Importance=High (TaskId:39)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Configuration (TaskId:39)
-  Nove reference po nahrazeni: System.Configuration (TaskId:39)
-Done executing task "Message". (TaskId:39)
-Task "Message" (TaskId:40)
-  Task Parameter:Importance=High (TaskId:40)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Core (TaskId:40)
-  Nove reference po nahrazeni: System.Core (TaskId:40)
-Done executing task "Message". (TaskId:40)
-Task "Message" (TaskId:41)
-  Task Parameter:Importance=High (TaskId:41)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Data (TaskId:41)
-  Nove reference po nahrazeni: System.Data (TaskId:41)
-Done executing task "Message". (TaskId:41)
-Task "Message" (TaskId:42)
-  Task Parameter:Importance=High (TaskId:42)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Data.DataSetExtensions (TaskId:42)
-  Nove reference po nahrazeni: System.Data.DataSetExtensions (TaskId:42)
-Done executing task "Message". (TaskId:42)
-Task "Message" (TaskId:43)
-  Task Parameter:Importance=High (TaskId:43)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Net.Http (TaskId:43)
-  Nove reference po nahrazeni: System.Net.Http (TaskId:43)
-Done executing task "Message". (TaskId:43)
-Task "Message" (TaskId:44)
-  Task Parameter:Importance=High (TaskId:44)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Web (TaskId:44)
-  Nove reference po nahrazeni: System.Web (TaskId:44)
-Done executing task "Message". (TaskId:44)
-Task "Message" (TaskId:45)
-  Task Parameter:Importance=High (TaskId:45)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Xml (TaskId:45)
-  Nove reference po nahrazeni: System.Xml (TaskId:45)
-Done executing task "Message". (TaskId:45)
-Task "Message" (TaskId:46)
-  Task Parameter:Importance=High (TaskId:46)
-  Task Parameter:Text=Nove reference po nahrazeni: System.Xml.Linq (TaskId:46)
-  Nove reference po nahrazeni: System.Xml.Linq (TaskId:46)
-Done executing task "Message". (TaskId:46)
-Task "Message" (TaskId:47)
-  Task Parameter:Importance=High (TaskId:47)
-  Task Parameter:Text=Nove reference po nahrazeni: mscorlib (TaskId:47)
-  Nove reference po nahrazeni: mscorlib (TaskId:47)
-Done executing task "Message". (TaskId:47)
-Task "Message" (TaskId:48)
-  Task Parameter:Importance=High (TaskId:48)
-  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\AdapterDB3.MSSQL.dll (TaskId:48)
-  Nove reference po nahrazeni: S:\TestLib\AdapterDB3.MSSQL.dll (TaskId:48)
-Done executing task "Message". (TaskId:48)
-Task "Message" (TaskId:49)
-  Task Parameter:Importance=High (TaskId:49)
-  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\log4net.dll (TaskId:49)
-  Nove reference po nahrazeni: S:\TestLib\log4net.dll (TaskId:49)
-Done executing task "Message". (TaskId:49)
-Task "Message" (TaskId:50)
-  Task Parameter:Importance=High (TaskId:50)
-  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\Oracle.ManagedDataAccess.dll (TaskId:50)
-  Nove reference po nahrazeni: S:\TestLib\Oracle.ManagedDataAccess.dll (TaskId:50)
-Done executing task "Message". (TaskId:50)
-Task "Message" (TaskId:51)
-  Task Parameter:Importance=High (TaskId:51)
-  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\System.Data.SqlClient.dll (TaskId:51)
-  Nove reference po nahrazeni: S:\TestLib\System.Data.SqlClient.dll (TaskId:51)
-Done executing task "Message". (TaskId:51)
-Task "WriteLinesToFile" (TaskId:52)
-  Task Parameter:File=s:\GitHub03\HelloWorld3a\src\AppServer03\References02AfterReplacing.txt (TaskId:52)
-  Task Parameter:
-      Lines=
-          System.Deployment
-          System.Drawing
-          System.Windows.Forms
-          Microsoft.CSharp
-          System
-          System.Configuration
-          System.Core
-          System.Data
-          System.Data.DataSetExtensions
-          System.Net.Http
-          System.Web
-          System.Xml
-          System.Xml.Linq
-          mscorlib
-          S:\TestLib\AdapterDB3.MSSQL.dll
-          S:\TestLib\log4net.dll
-          S:\TestLib\Oracle.ManagedDataAccess.dll
-          S:\TestLib\System.Data.SqlClient.dll (TaskId:52)
-  Task Parameter:Overwrite=True (TaskId:52)
-Done executing task "WriteLinesToFile". (TaskId:52)
-Done building target "ReplaceNugetReferences" in project "AppServer03.csproj".: (TargetId:21)
-Target "ImplicitlyExpandNETStandardFacades: (TargetId:22)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.NETFramework.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveAssemblyReferences" depends on it):
-Added Item(s): 
-    _CandidateNETStandardReferences=
-        System.Deployment
-        System.Drawing
-        System.Windows.Forms
         Microsoft.CSharp
                 NuGetIsFrameworkReference=true
                 NuGetSourceType=Package
@@ -2783,10 +2399,6 @@ Added Item(s):
         mscorlib
                 NuGetIsFrameworkReference=true
                 NuGetSourceType=Package
-        S:\TestLib\AdapterDB3.MSSQL.dll
-        S:\TestLib\log4net.dll
-        S:\TestLib\Oracle.ManagedDataAccess.dll
-        S:\TestLib\System.Data.SqlClient.dll
 Added Item(s): 
     _InboxNETStandardFolders=
         C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\
@@ -2795,17 +2407,41 @@ Set Property: NETStandardInbox=true
 Task "GetDependsOnNETStandard" skipped, due to false condition; ('$(_RunGetDependsOnNETStandard)' == 'true') was evaluated as ('' == 'true').
 Task "NETBuildExtensionsError" skipped, due to false condition; ('$(DependsOnNETStandard)' == 'true' AND '$(NETStandardInbox)' != 'true' AND '$(_UsingOldSDK)' == 'true') was evaluated as ('' == 'true' AND 'true' != 'true' AND '' == 'true').
 Task "AddFacadesToReferences" skipped, due to false condition; ('@(_NETStandardLibraryNETFrameworkLib)' != '') was evaluated as ('' != '').
-Done building target "ImplicitlyExpandNETStandardFacades" in project "AppServer03.csproj".: (TargetId:22)
+Done building target "ImplicitlyExpandNETStandardFacades" in project "AppServer03.csproj".: (TargetId:21)
 Target "GetFrameworkPaths" skipped. Previously built successfully.
 Target "GetReferenceAssemblyPaths" skipped. Previously built successfully.
-Target "_HandlePackageFileConflicts: (TargetId:23)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveAssemblyReferences" depends on it):
+Target "_HandlePackageFileConflicts: (TargetId:22)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\Microsoft.NET.Build.Extensions.ConflictResolution.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveAssemblyReferences" depends on it):
 Using "ResolvePackageFileConflicts" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Microsoft\Microsoft.NET.Build.Extensions\\tools\net472\Microsoft.NET.Build.Extensions.Tasks.dll".
-Task "ResolvePackageFileConflicts" (TaskId:53)
+Task "ResolvePackageFileConflicts" (TaskId:12)
   Task Parameter:
       References=
           System.Deployment
           System.Drawing
           System.Windows.Forms
+          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=AdapterDB3.MSSQL
+                  NuGetPackageVersion=0.1.0.3
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=log4net
+                  NuGetPackageVersion=2.0.11
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=Oracle.ManagedDataAccess
+                  NuGetPackageVersion=19.9.0
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=System.Data.SqlClient
+                  NuGetPackageVersion=4.8.2
+                  NuGetSourceType=Package
+                  Private=false
           Microsoft.CSharp
                   NuGetIsFrameworkReference=true
                   NuGetSourceType=Package
@@ -2838,11 +2474,7 @@ Task "ResolvePackageFileConflicts" (TaskId:53)
                   NuGetSourceType=Package
           mscorlib
                   NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          S:\TestLib\AdapterDB3.MSSQL.dll
-          S:\TestLib\log4net.dll
-          S:\TestLib\Oracle.ManagedDataAccess.dll
-          S:\TestLib\System.Data.SqlClient.dll (TaskId:53)
+                  NuGetSourceType=Package (TaskId:12)
   Task Parameter:
       ReferenceCopyLocalPaths=
           C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
@@ -2868,11 +2500,11 @@ Task "ResolvePackageFileConflicts" (TaskId:53)
                   NuGetPackageId=System.Data.SqlClient
                   NuGetPackageVersion=4.8.2
                   NuGetSourceType=Package
-                  Private=false (TaskId:53)
+                  Private=false (TaskId:12)
   Task Parameter:
       TargetFrameworkDirectories=
           C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\
-          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\ (TaskId:53)
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Facades\ (TaskId:12)
   Task Parameter:
       PackageOverrides=
           NETStandard.Library
@@ -2972,16 +2604,36 @@ Task "ResolvePackageFileConflicts" (TaskId:53)
           System.Xml.XmlSerializer|4.3.0;
           System.Xml.XPath|4.3.0;
           System.Xml.XPath.XDocument|4.3.0;
-         (TaskId:53)
-  Encountered conflict between 'Reference:S:\TestLib\AdapterDB3.MSSQL.dll' and 'CopyLocal:C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll'. Choosing 'Reference:S:\TestLib\AdapterDB3.MSSQL.dll' because AssemblyVersion '1.0.0.0' is greater than '0.1.0.3'. (TaskId:53)
-  Encountered conflict between 'Reference:S:\TestLib\log4net.dll' and 'CopyLocal:C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll'. Choosing 'Reference:S:\TestLib\log4net.dll' because AssemblyVersion '2.0.12.0' is greater than '2.0.11.0'. (TaskId:53)
-  Encountered conflict between 'Reference:S:\TestLib\Oracle.ManagedDataAccess.dll' and 'CopyLocal:C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll'. Could not determine winner due to equal file and assembly versions. (TaskId:53)
-  Encountered conflict between 'Reference:S:\TestLib\System.Data.SqlClient.dll' and 'CopyLocal:C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\runtimes\win\lib\net461\System.Data.SqlClient.dll'. Could not determine winner due to equal file and assembly versions. (TaskId:53)
+         (TaskId:12)
   Output Item(s): 
       _ReferencesWithoutConflicts=
           System.Deployment
           System.Drawing
           System.Windows.Forms
+          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=AdapterDB3.MSSQL
+                  NuGetPackageVersion=0.1.0.3
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=log4net
+                  NuGetPackageVersion=2.0.11
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=Oracle.ManagedDataAccess
+                  NuGetPackageVersion=19.9.0
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=System.Data.SqlClient
+                  NuGetPackageVersion=4.8.2
+                  NuGetSourceType=Package
+                  Private=false
           Microsoft.CSharp
                   NuGetIsFrameworkReference=true
                   NuGetSourceType=Package
@@ -3014,13 +2666,21 @@ Task "ResolvePackageFileConflicts" (TaskId:53)
                   NuGetSourceType=Package
           mscorlib
                   NuGetIsFrameworkReference=true
-                  NuGetSourceType=Package
-          S:\TestLib\AdapterDB3.MSSQL.dll
-          S:\TestLib\log4net.dll
-          S:\TestLib\Oracle.ManagedDataAccess.dll
-          S:\TestLib\System.Data.SqlClient.dll (TaskId:53)
+                  NuGetSourceType=Package (TaskId:12)
   Output Item(s): 
       _ReferenceCopyLocalPathsWithoutConflicts=
+          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=AdapterDB3.MSSQL
+                  NuGetPackageVersion=0.1.0.3
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=log4net
+                  NuGetPackageVersion=2.0.11
+                  NuGetSourceType=Package
+                  Private=false
           C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
                   NuGetIsFrameworkReference=false
                   NuGetPackageId=Oracle.ManagedDataAccess
@@ -3032,21 +2692,37 @@ Task "ResolvePackageFileConflicts" (TaskId:53)
                   NuGetPackageId=System.Data.SqlClient
                   NuGetPackageVersion=4.8.2
                   NuGetSourceType=Package
-                  Private=false (TaskId:53)
-  Output Item(s): 
-      _ConflictPackageFiles=
-          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
-                  ConflictItemType=CopyLocal
-                  NuGetPackageId=AdapterDB3.MSSQL
-          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
-                  ConflictItemType=CopyLocal
-                  NuGetPackageId=log4net (TaskId:53)
-Done executing task "ResolvePackageFileConflicts". (TaskId:53)
+                  Private=false (TaskId:12)
+Done executing task "ResolvePackageFileConflicts". (TaskId:12)
 Removed Item(s): 
     Reference=
         System.Deployment
         System.Drawing
         System.Windows.Forms
+        C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=AdapterDB3.MSSQL
+                NuGetPackageVersion=0.1.0.3
+                NuGetSourceType=Package
+                Private=false
+        C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=log4net
+                NuGetPackageVersion=2.0.11
+                NuGetSourceType=Package
+                Private=false
+        C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=Oracle.ManagedDataAccess
+                NuGetPackageVersion=19.9.0
+                NuGetSourceType=Package
+                Private=false
+        C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=System.Data.SqlClient
+                NuGetPackageVersion=4.8.2
+                NuGetSourceType=Package
+                Private=false
         Microsoft.CSharp
                 NuGetIsFrameworkReference=true
                 NuGetSourceType=Package
@@ -3080,15 +2756,35 @@ Removed Item(s):
         mscorlib
                 NuGetIsFrameworkReference=true
                 NuGetSourceType=Package
-        S:\TestLib\AdapterDB3.MSSQL.dll
-        S:\TestLib\log4net.dll
-        S:\TestLib\Oracle.ManagedDataAccess.dll
-        S:\TestLib\System.Data.SqlClient.dll
 Added Item(s): 
     Reference=
         System.Deployment
         System.Drawing
         System.Windows.Forms
+        C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=AdapterDB3.MSSQL
+                NuGetPackageVersion=0.1.0.3
+                NuGetSourceType=Package
+                Private=false
+        C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=log4net
+                NuGetPackageVersion=2.0.11
+                NuGetSourceType=Package
+                Private=false
+        C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=Oracle.ManagedDataAccess
+                NuGetPackageVersion=19.9.0
+                NuGetSourceType=Package
+                Private=false
+        C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=System.Data.SqlClient
+                NuGetPackageVersion=4.8.2
+                NuGetSourceType=Package
+                Private=false
         Microsoft.CSharp
                 NuGetIsFrameworkReference=true
                 NuGetSourceType=Package
@@ -3122,10 +2818,6 @@ Added Item(s):
         mscorlib
                 NuGetIsFrameworkReference=true
                 NuGetSourceType=Package
-        S:\TestLib\AdapterDB3.MSSQL.dll
-        S:\TestLib\log4net.dll
-        S:\TestLib\Oracle.ManagedDataAccess.dll
-        S:\TestLib\System.Data.SqlClient.dll
 Removed Item(s): 
     ReferenceCopyLocalPaths=
         C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
@@ -3154,6 +2846,18 @@ Removed Item(s):
                 Private=false
 Added Item(s): 
     ReferenceCopyLocalPaths=
+        C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=AdapterDB3.MSSQL
+                NuGetPackageVersion=0.1.0.3
+                NuGetSourceType=Package
+                Private=false
+        C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=log4net
+                NuGetPackageVersion=2.0.11
+                NuGetSourceType=Package
+                Private=false
         C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
                 NuGetIsFrameworkReference=false
                 NuGetPackageId=Oracle.ManagedDataAccess
@@ -3166,7 +2870,414 @@ Added Item(s):
                 NuGetPackageVersion=4.8.2
                 NuGetSourceType=Package
                 Private=false
-Done building target "_HandlePackageFileConflicts" in project "AppServer03.csproj".: (TargetId:23)
+Done building target "_HandlePackageFileConflicts" in project "AppServer03.csproj".: (TargetId:22)
+Target "ExpandSDKReferences" skipped. Previously built successfully.
+Target "ReplaceNugetReferences: (TargetId:23)" in project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveAssemblyReferences" depends on it):
+Task "Message" (TaskId:13)
+  Task Parameter:Importance=High (TaskId:13)
+  Task Parameter:Text=ReplaceNugetReferences (TaskId:13)
+  ReplaceNugetReferences (TaskId:13)
+Done executing task "Message". (TaskId:13)
+Task "Message" (TaskId:14)
+  Task Parameter:Importance=High (TaskId:14)
+  Task Parameter:Text=Pouzite reference puvodni: System.Deployment (TaskId:14)
+  Pouzite reference puvodni: System.Deployment (TaskId:14)
+Done executing task "Message". (TaskId:14)
+Task "Message" (TaskId:15)
+  Task Parameter:Importance=High (TaskId:15)
+  Task Parameter:Text=Pouzite reference puvodni: System.Drawing (TaskId:15)
+  Pouzite reference puvodni: System.Drawing (TaskId:15)
+Done executing task "Message". (TaskId:15)
+Task "Message" (TaskId:16)
+  Task Parameter:Importance=High (TaskId:16)
+  Task Parameter:Text=Pouzite reference puvodni: System.Windows.Forms (TaskId:16)
+  Pouzite reference puvodni: System.Windows.Forms (TaskId:16)
+Done executing task "Message". (TaskId:16)
+Task "Message" (TaskId:17)
+  Task Parameter:Importance=High (TaskId:17)
+  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll (TaskId:17)
+  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll (TaskId:17)
+Done executing task "Message". (TaskId:17)
+Task "Message" (TaskId:18)
+  Task Parameter:Importance=High (TaskId:18)
+  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll (TaskId:18)
+  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll (TaskId:18)
+Done executing task "Message". (TaskId:18)
+Task "Message" (TaskId:19)
+  Task Parameter:Importance=High (TaskId:19)
+  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll (TaskId:19)
+  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll (TaskId:19)
+Done executing task "Message". (TaskId:19)
+Task "Message" (TaskId:20)
+  Task Parameter:Importance=High (TaskId:20)
+  Task Parameter:Text=Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll (TaskId:20)
+  Pouzite reference puvodni: C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll (TaskId:20)
+Done executing task "Message". (TaskId:20)
+Task "Message" (TaskId:21)
+  Task Parameter:Importance=High (TaskId:21)
+  Task Parameter:Text=Pouzite reference puvodni: Microsoft.CSharp (TaskId:21)
+  Pouzite reference puvodni: Microsoft.CSharp (TaskId:21)
+Done executing task "Message". (TaskId:21)
+Task "Message" (TaskId:22)
+  Task Parameter:Importance=High (TaskId:22)
+  Task Parameter:Text=Pouzite reference puvodni: System (TaskId:22)
+  Pouzite reference puvodni: System (TaskId:22)
+Done executing task "Message". (TaskId:22)
+Task "Message" (TaskId:23)
+  Task Parameter:Importance=High (TaskId:23)
+  Task Parameter:Text=Pouzite reference puvodni: System.Configuration (TaskId:23)
+  Pouzite reference puvodni: System.Configuration (TaskId:23)
+Done executing task "Message". (TaskId:23)
+Task "Message" (TaskId:24)
+  Task Parameter:Importance=High (TaskId:24)
+  Task Parameter:Text=Pouzite reference puvodni: System.Core (TaskId:24)
+  Pouzite reference puvodni: System.Core (TaskId:24)
+Done executing task "Message". (TaskId:24)
+Task "Message" (TaskId:25)
+  Task Parameter:Importance=High (TaskId:25)
+  Task Parameter:Text=Pouzite reference puvodni: System.Data (TaskId:25)
+  Pouzite reference puvodni: System.Data (TaskId:25)
+Done executing task "Message". (TaskId:25)
+Task "Message" (TaskId:26)
+  Task Parameter:Importance=High (TaskId:26)
+  Task Parameter:Text=Pouzite reference puvodni: System.Data.DataSetExtensions (TaskId:26)
+  Pouzite reference puvodni: System.Data.DataSetExtensions (TaskId:26)
+Done executing task "Message". (TaskId:26)
+Task "Message" (TaskId:27)
+  Task Parameter:Importance=High (TaskId:27)
+  Task Parameter:Text=Pouzite reference puvodni: System.Net.Http (TaskId:27)
+  Pouzite reference puvodni: System.Net.Http (TaskId:27)
+Done executing task "Message". (TaskId:27)
+Task "Message" (TaskId:28)
+  Task Parameter:Importance=High (TaskId:28)
+  Task Parameter:Text=Pouzite reference puvodni: System.Web (TaskId:28)
+  Pouzite reference puvodni: System.Web (TaskId:28)
+Done executing task "Message". (TaskId:28)
+Task "Message" (TaskId:29)
+  Task Parameter:Importance=High (TaskId:29)
+  Task Parameter:Text=Pouzite reference puvodni: System.Xml (TaskId:29)
+  Pouzite reference puvodni: System.Xml (TaskId:29)
+Done executing task "Message". (TaskId:29)
+Task "Message" (TaskId:30)
+  Task Parameter:Importance=High (TaskId:30)
+  Task Parameter:Text=Pouzite reference puvodni: System.Xml.Linq (TaskId:30)
+  Pouzite reference puvodni: System.Xml.Linq (TaskId:30)
+Done executing task "Message". (TaskId:30)
+Task "Message" (TaskId:31)
+  Task Parameter:Importance=High (TaskId:31)
+  Task Parameter:Text=Pouzite reference puvodni: mscorlib (TaskId:31)
+  Pouzite reference puvodni: mscorlib (TaskId:31)
+Done executing task "Message". (TaskId:31)
+Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "WriteLinesToFile" (TaskId:32)
+  Task Parameter:File=s:\GitHub03\HelloWorld3a\src\AppServer03\References01BeforeReplacing.txt (TaskId:32)
+  Task Parameter:
+      Lines=
+          System.Deployment
+          System.Drawing
+          System.Windows.Forms
+          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+          C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+          C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
+          Microsoft.CSharp
+          System
+          System.Configuration
+          System.Core
+          System.Data
+          System.Data.DataSetExtensions
+          System.Net.Http
+          System.Web
+          System.Xml
+          System.Xml.Linq
+          mscorlib (TaskId:32)
+  Task Parameter:Overwrite=True (TaskId:32)
+Done executing task "WriteLinesToFile". (TaskId:32)
+Using "IndSoftReplaceNugetReferences" task from assembly "S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll".
+Task "IndSoftReplaceNugetReferences" (TaskId:33)
+  Task Parameter:
+      ReferencesIn=
+          System.Deployment
+          System.Drawing
+          System.Windows.Forms
+          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=AdapterDB3.MSSQL
+                  NuGetPackageVersion=0.1.0.3
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=log4net
+                  NuGetPackageVersion=2.0.11
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=Oracle.ManagedDataAccess
+                  NuGetPackageVersion=19.9.0
+                  NuGetSourceType=Package
+                  Private=false
+          C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
+                  NuGetIsFrameworkReference=false
+                  NuGetPackageId=System.Data.SqlClient
+                  NuGetPackageVersion=4.8.2
+                  NuGetSourceType=Package
+                  Private=false
+          Microsoft.CSharp
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Configuration
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Core
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Data
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Data.DataSetExtensions
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Net.Http
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Web
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Xml
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          System.Xml.Linq
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package
+          mscorlib
+                  NuGetIsFrameworkReference=true
+                  NuGetSourceType=Package (TaskId:33)
+  Task Parameter:FolderLibraryDev=S:\TestLib (TaskId:33)
+  Task Parameter:FolderNugetCacheNeedReplaceMask=.nuget\packages (TaskId:33)
+  ReferencePathOrg: 'System.Deployment' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Drawing' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Windows.Forms' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll' (TaskId:33)
+  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' (TaskId:33)
+  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll' (TaskId:33)
+  ReferencePathOrg: 'C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  Output ReferencePathNew: 'C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll' (TaskId:33)
+  ReferencePathOrg: 'Microsoft.CSharp' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Configuration' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Core' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Data' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Data.DataSetExtensions' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Net.Http' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Web' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Xml' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'System.Xml.Linq' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  ReferencePathOrg: 'mscorlib' (TaskId:33)
+  FolderNeedReplaceMask: '.nuget\packages' (TaskId:33)
+  FolderLibraryDev: 'S:\TestLib' (TaskId:33)
+  Final oneReferenceOut: 'S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll' (TaskId:33)
+  Output Property: ReferencesOutFromTask=S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll (TaskId:33)
+Done executing task "IndSoftReplaceNugetReferences". (TaskId:33)
+Task "Message" (TaskId:34)
+  Task Parameter:Importance=High (TaskId:34)
+  Task Parameter:Text=listOut:ReferencesOutFromTask=S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll (TaskId:34)
+  listOut:ReferencesOutFromTask=S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll (TaskId:34)
+Done executing task "Message". (TaskId:34)
+Removed Item(s): 
+    Reference=
+        C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=AdapterDB3.MSSQL
+                NuGetPackageVersion=0.1.0.3
+                NuGetSourceType=Package
+                Private=false
+Removed Item(s): 
+    Reference=
+        C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=log4net
+                NuGetPackageVersion=2.0.11
+                NuGetSourceType=Package
+                Private=false
+Removed Item(s): 
+    Reference=
+        C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=Oracle.ManagedDataAccess
+                NuGetPackageVersion=19.9.0
+                NuGetSourceType=Package
+                Private=false
+Removed Item(s): 
+    Reference=
+        C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=System.Data.SqlClient
+                NuGetPackageVersion=4.8.2
+                NuGetSourceType=Package
+                Private=false
+Added Item(s): 
+    Reference=
+        S:\TestLib\AdapterDB3.MSSQL.dll
+        S:\TestLib\log4net.dll
+        S:\TestLib\Oracle.ManagedDataAccess.dll
+        S:\TestLib\System.Data.SqlClient.dll
+Task "Message" (TaskId:35)
+  Task Parameter:Importance=High (TaskId:35)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Deployment (TaskId:35)
+  Nove reference po nahrazeni: System.Deployment (TaskId:35)
+Done executing task "Message". (TaskId:35)
+Task "Message" (TaskId:36)
+  Task Parameter:Importance=High (TaskId:36)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Drawing (TaskId:36)
+  Nove reference po nahrazeni: System.Drawing (TaskId:36)
+Done executing task "Message". (TaskId:36)
+Task "Message" (TaskId:37)
+  Task Parameter:Importance=High (TaskId:37)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Windows.Forms (TaskId:37)
+  Nove reference po nahrazeni: System.Windows.Forms (TaskId:37)
+Done executing task "Message". (TaskId:37)
+Task "Message" (TaskId:38)
+  Task Parameter:Importance=High (TaskId:38)
+  Task Parameter:Text=Nove reference po nahrazeni: Microsoft.CSharp (TaskId:38)
+  Nove reference po nahrazeni: Microsoft.CSharp (TaskId:38)
+Done executing task "Message". (TaskId:38)
+Task "Message" (TaskId:39)
+  Task Parameter:Importance=High (TaskId:39)
+  Task Parameter:Text=Nove reference po nahrazeni: System (TaskId:39)
+  Nove reference po nahrazeni: System (TaskId:39)
+Done executing task "Message". (TaskId:39)
+Task "Message" (TaskId:40)
+  Task Parameter:Importance=High (TaskId:40)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Configuration (TaskId:40)
+  Nove reference po nahrazeni: System.Configuration (TaskId:40)
+Done executing task "Message". (TaskId:40)
+Task "Message" (TaskId:41)
+  Task Parameter:Importance=High (TaskId:41)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Core (TaskId:41)
+  Nove reference po nahrazeni: System.Core (TaskId:41)
+Done executing task "Message". (TaskId:41)
+Task "Message" (TaskId:42)
+  Task Parameter:Importance=High (TaskId:42)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Data (TaskId:42)
+  Nove reference po nahrazeni: System.Data (TaskId:42)
+Done executing task "Message". (TaskId:42)
+Task "Message" (TaskId:43)
+  Task Parameter:Importance=High (TaskId:43)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Data.DataSetExtensions (TaskId:43)
+  Nove reference po nahrazeni: System.Data.DataSetExtensions (TaskId:43)
+Done executing task "Message". (TaskId:43)
+Task "Message" (TaskId:44)
+  Task Parameter:Importance=High (TaskId:44)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Net.Http (TaskId:44)
+  Nove reference po nahrazeni: System.Net.Http (TaskId:44)
+Done executing task "Message". (TaskId:44)
+Task "Message" (TaskId:45)
+  Task Parameter:Importance=High (TaskId:45)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Web (TaskId:45)
+  Nove reference po nahrazeni: System.Web (TaskId:45)
+Done executing task "Message". (TaskId:45)
+Task "Message" (TaskId:46)
+  Task Parameter:Importance=High (TaskId:46)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Xml (TaskId:46)
+  Nove reference po nahrazeni: System.Xml (TaskId:46)
+Done executing task "Message". (TaskId:46)
+Task "Message" (TaskId:47)
+  Task Parameter:Importance=High (TaskId:47)
+  Task Parameter:Text=Nove reference po nahrazeni: System.Xml.Linq (TaskId:47)
+  Nove reference po nahrazeni: System.Xml.Linq (TaskId:47)
+Done executing task "Message". (TaskId:47)
+Task "Message" (TaskId:48)
+  Task Parameter:Importance=High (TaskId:48)
+  Task Parameter:Text=Nove reference po nahrazeni: mscorlib (TaskId:48)
+  Nove reference po nahrazeni: mscorlib (TaskId:48)
+Done executing task "Message". (TaskId:48)
+Task "Message" (TaskId:49)
+  Task Parameter:Importance=High (TaskId:49)
+  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\AdapterDB3.MSSQL.dll (TaskId:49)
+  Nove reference po nahrazeni: S:\TestLib\AdapterDB3.MSSQL.dll (TaskId:49)
+Done executing task "Message". (TaskId:49)
+Task "Message" (TaskId:50)
+  Task Parameter:Importance=High (TaskId:50)
+  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\log4net.dll (TaskId:50)
+  Nove reference po nahrazeni: S:\TestLib\log4net.dll (TaskId:50)
+Done executing task "Message". (TaskId:50)
+Task "Message" (TaskId:51)
+  Task Parameter:Importance=High (TaskId:51)
+  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\Oracle.ManagedDataAccess.dll (TaskId:51)
+  Nove reference po nahrazeni: S:\TestLib\Oracle.ManagedDataAccess.dll (TaskId:51)
+Done executing task "Message". (TaskId:51)
+Task "Message" (TaskId:52)
+  Task Parameter:Importance=High (TaskId:52)
+  Task Parameter:Text=Nove reference po nahrazeni: S:\TestLib\System.Data.SqlClient.dll (TaskId:52)
+  Nove reference po nahrazeni: S:\TestLib\System.Data.SqlClient.dll (TaskId:52)
+Done executing task "Message". (TaskId:52)
+Task "WriteLinesToFile" (TaskId:53)
+  Task Parameter:File=s:\GitHub03\HelloWorld3a\src\AppServer03\References02AfterReplacing.txt (TaskId:53)
+  Task Parameter:
+      Lines=
+          System.Deployment
+          System.Drawing
+          System.Windows.Forms
+          Microsoft.CSharp
+          System
+          System.Configuration
+          System.Core
+          System.Data
+          System.Data.DataSetExtensions
+          System.Net.Http
+          System.Web
+          System.Xml
+          System.Xml.Linq
+          mscorlib
+          S:\TestLib\AdapterDB3.MSSQL.dll
+          S:\TestLib\log4net.dll
+          S:\TestLib\Oracle.ManagedDataAccess.dll
+          S:\TestLib\System.Data.SqlClient.dll (TaskId:53)
+  Task Parameter:Overwrite=True (TaskId:53)
+Done executing task "WriteLinesToFile". (TaskId:53)
+Done building target "ReplaceNugetReferences" in project "AppServer03.csproj".: (TargetId:23)
 Target "ResolveAssemblyReferences: (TargetId:24)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveReferences" depends on it):
 Added Item(s): 
     _ReferenceInstalledAssemblyDirectory=
@@ -3454,12 +3565,12 @@ Task "ResolveAssemblyReference" (TaskId:54)
           Considered "C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.winmd", but it didn't exist. (TaskId:54)
       This reference is not "CopyLocal" because it's a prerequisite file. (TaskId:54)
       The ImageRuntimeVersion for this reference is "v4.0.30319". (TaskId:54)
-  Primary reference "AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null". (TaskId:54)
+  Primary reference "AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null". (TaskId:54)
       Resolved file path is "S:\TestLib\AdapterDB3.MSSQL.dll". (TaskId:54)
       Reference found at search path location "{RawFileName}". (TaskId:54)
-      Found related file "S:\TestLib\AdapterDB3.MSSQL.pdb". (TaskId:54)
       The ImageRuntimeVersion for this reference is "v4.0.30319". (TaskId:54)
-  Primary reference "log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a". (TaskId:54)
+  Unified primary reference "log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a". (TaskId:54)
+      Using this version instead of original version "2.0.11.0" in "S:\TestLib\AdapterDB3.MSSQL.dll" because AutoUnify is 'true'. (TaskId:54)
       Resolved file path is "S:\TestLib\log4net.dll". (TaskId:54)
       Reference found at search path location "{RawFileName}". (TaskId:54)
       The ImageRuntimeVersion for this reference is "v4.0.30319". (TaskId:54)
@@ -3534,12 +3645,12 @@ Task "ResolveAssemblyReference" (TaskId:54)
       ReferencePath=
           S:\TestLib\AdapterDB3.MSSQL.dll
                   CopyLocal=true
-                  FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                   ImageRuntime=v4.0.30319
                   OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={RawFileName}
-                  Version=1.0.0.0
+                  Version=0.1.0.3
           S:\TestLib\log4net.dll
                   CopyLocal=true
                   FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -3729,12 +3840,12 @@ Task "ResolveAssemblyReference" (TaskId:54)
       _ResolveAssemblyReferenceResolvedFiles=
           S:\TestLib\AdapterDB3.MSSQL.dll
                   CopyLocal=true
-                  FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                   ImageRuntime=v4.0.30319
                   OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={RawFileName}
-                  Version=1.0.0.0
+                  Version=0.1.0.3
           S:\TestLib\log4net.dll
                   CopyLocal=true
                   FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -3959,23 +4070,15 @@ Task "ResolveAssemblyReference" (TaskId:54)
                   ResolvedFrom={TargetFrameworkDirectory}
                   Version=4.0.0.0 (TaskId:54)
   Output Item(s): 
-      _ReferenceRelatedPaths=
-          S:\TestLib\AdapterDB3.MSSQL.pdb
-                  CopyLocal=true
-                  FusionName=
-                  OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
-                  ResolvedFrom={RawFileName}
-                  Version=1.0.0.0 (TaskId:54)
-  Output Item(s): 
       ReferenceCopyLocalPaths=
           S:\TestLib\AdapterDB3.MSSQL.dll
                   CopyLocal=true
-                  FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                   ImageRuntime=v4.0.30319
                   OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={RawFileName}
-                  Version=1.0.0.0
+                  Version=0.1.0.3
           S:\TestLib\log4net.dll
                   CopyLocal=true
                   FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -3999,13 +4102,11 @@ Task "ResolveAssemblyReference" (TaskId:54)
                   OriginalItemSpec=S:\TestLib\System.Data.SqlClient.dll
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={RawFileName}
-                  Version=4.6.1.2
-          S:\TestLib\AdapterDB3.MSSQL.pdb
-                  CopyLocal=true
-                  FusionName=
-                  OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
-                  ResolvedFrom={RawFileName}
-                  Version=1.0.0.0 (TaskId:54)
+                  Version=4.6.1.2 (TaskId:54)
+  Output Item(s): 
+      SuggestedBindingRedirects=
+          log4net, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+                  MaxVersion=2.0.12.0 (TaskId:54)
   Output Item(s): FileWrites=obj\Debug\AppServer03.csprojAssemblyReference.cache (TaskId:54)
   Output Property: DependsOnSystemRuntime=False (TaskId:54)
   Output Property: _DependsOnNETStandard=False (TaskId:54)
@@ -4016,7 +4117,7 @@ Target "_RemoveZipFileSuggestedRedirect: (TargetId:25)" in file "C:\Program File
 Done building target "_RemoveZipFileSuggestedRedirect" in project "AppServer03.csproj".: (TargetId:25)
 Target "GenerateBindingRedirects: (TargetId:26)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveReferences" depends on it):
 Building target "GenerateBindingRedirects" completely.
-Input file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Microsoft.Common.targets\ImportBefore\MSBuild.IndSoft.NuGet.ReplaceNugetReferences.targets" is newer than output file "obj\Debug\AppServer03.exe.config".
+Input file "log4net, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a" does not exist.
 Using "GenerateBindingRedirects" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "GenerateBindingRedirects" (TaskId:55)
   Task Parameter:AppConfigFile=App.config
@@ -4024,8 +4125,16 @@ Task "GenerateBindingRedirects" (TaskId:55)
                   TargetPath=AppServer03.exe.config (TaskId:55)
   Task Parameter:TargetName=AppServer03.exe.config (TaskId:55)
   Task Parameter:OutputAppConfigFile=obj\Debug\AppServer03.exe.config (TaskId:55)
-  No suggested binding redirects from ResolveAssemblyReferences. (TaskId:55)
-  Output Item(s): FileWrites= (TaskId:55)
+  Task Parameter:
+      SuggestedRedirects=
+          log4net, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+                  MaxVersion=2.0.12.0 (TaskId:55)
+  Processing suggested binding redirect on "log4net, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a" with MaxVersion "2.0.12.0". (TaskId:55)
+  Output Item(s): 
+      FileWrites=
+          obj\Debug\AppServer03.exe.config
+                  OriginalItemSpec=App.config
+                  TargetPath=AppServer03.exe.config (TaskId:55)
 Done executing task "GenerateBindingRedirects". (TaskId:55)
 Done building target "GenerateBindingRedirects" in project "AppServer03.csproj".: (TargetId:26)
 Target "GenerateBindingRedirectsUpdateAppConfig: (TargetId:27)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "ResolveReferences" depends on it):
@@ -4378,13 +4487,13 @@ Added Item(s):
     ReferencePathWithRefAssemblies=
         S:\TestLib\AdapterDB3.MSSQL.dll
                 CopyLocal=true
-                FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                 ImageRuntime=v4.0.30319
                 OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                 ReferenceAssembly=S:\TestLib\AdapterDB3.MSSQL.dll
                 ReferenceSourceTarget=ResolveAssemblyReference
                 ResolvedFrom={RawFileName}
-                Version=1.0.0.0
+                Version=0.1.0.3
 Added Item(s): 
     ReferencePathWithRefAssemblies=
         S:\TestLib\log4net.dll
@@ -4651,13 +4760,13 @@ Task "GenerateResource" (TaskId:62)
       References=
           S:\TestLib\AdapterDB3.MSSQL.dll
                   CopyLocal=true
-                  FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                   ImageRuntime=v4.0.30319
                   OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceAssembly=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={RawFileName}
-                  Version=1.0.0.0
+                  Version=0.1.0.3
           S:\TestLib\log4net.dll
                   CopyLocal=true
                   FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -4862,7 +4971,7 @@ Task "GenerateResource" (TaskId:62)
                   Version=4.0.0.0 (TaskId:62)
   Task Parameter:
       AdditionalInputs=
-          C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Microsoft.Common.targets\ImportBefore\MSBuild.IndSoft.NuGet.ReplaceNugetReferences.targets
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\AppServer03.csproj.nuget.g.props
           C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Xaml.targets
           C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\Common7\IDE\CommonExtensions\Microsoft\NuGet\NuGet.targets
@@ -4889,8 +4998,8 @@ Task "GenerateResource" (TaskId:62)
                   WithCulture=false (TaskId:62)
   Task Parameter:SdkToolsPath=C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\ (TaskId:62)
   Task Parameter:ExecuteAsTool=False (TaskId:62)
-  Input file "S:\TestLib\AdapterDB3.MSSQL.dll" is newer than output file "obj\Debug\AppServer03.Form1.resources". (TaskId:62)
-  Input file "S:\TestLib\AdapterDB3.MSSQL.dll" is newer than output file "obj\Debug\AppServer03.Properties.Resources.resources". (TaskId:62)
+  Input file "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" is newer than output file "obj\Debug\AppServer03.Form1.resources". (TaskId:62)
+  Input file "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" is newer than output file "obj\Debug\AppServer03.Properties.Resources.resources". (TaskId:62)
   "C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\resgen.exe" /useSourcePath /r:S:\TestLib\AdapterDB3.MSSQL.dll /r:S:\TestLib\log4net.dll /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\Microsoft.CSharp.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\mscorlib.dll" /r:S:\TestLib\Oracle.ManagedDataAccess.dll /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Configuration.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Core.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.DataSetExtensions.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Data.dll" /r:S:\TestLib\System.Data.SqlClient.dll /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Deployment.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Drawing.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll" /r:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll" /compile Form1.resx,obj\Debug\AppServer03.Form1.resources Properties\Resources.resx,obj\Debug\AppServer03.Properties.Resources.resources (TaskId:62)
   Processing resource file "Form1.resx" into "obj\Debug\AppServer03.Form1.resources". (TaskId:62)
   Processing 0 resources from file "Form1.resx". (TaskId:62)
@@ -5103,13 +5212,13 @@ Added Item(s):
     CoreCompileCache=
         S:\TestLib\AdapterDB3.MSSQL.dll
                 CopyLocal=true
-                FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                 ImageRuntime=v4.0.30319
                 OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                 ReferenceAssembly=S:\TestLib\AdapterDB3.MSSQL.dll
                 ReferenceSourceTarget=ResolveAssemblyReference
                 ResolvedFrom={RawFileName}
-                Version=1.0.0.0
+                Version=0.1.0.3
         S:\TestLib\log4net.dll
                 CopyLocal=true
                 FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -5419,13 +5528,13 @@ Task "Csc" (TaskId:69)
       References=
           S:\TestLib\AdapterDB3.MSSQL.dll
                   CopyLocal=true
-                  FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                   ImageRuntime=v4.0.30319
                   OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceAssembly=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={RawFileName}
-                  Version=1.0.0.0
+                  Version=0.1.0.3
           S:\TestLib\log4net.dll
                   CopyLocal=true
                   FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -5748,51 +5857,56 @@ Using "Copy" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, C
 Task "Copy" (TaskId:70)
   Task Parameter:
       SourceFiles=
+          C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+          C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
           C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
           C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\runtimes\win\lib\net461\System.Data.SqlClient.dll
           S:\TestLib\AdapterDB3.MSSQL.dll
           S:\TestLib\log4net.dll
           S:\TestLib\Oracle.ManagedDataAccess.dll
-          S:\TestLib\System.Data.SqlClient.dll
-          S:\TestLib\AdapterDB3.MSSQL.pdb (TaskId:70)
+          S:\TestLib\System.Data.SqlClient.dll (TaskId:70)
   Task Parameter:
       DestinationFiles=
+          bin\Debug\AdapterDB3.MSSQL.dll
+          bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
           bin\Debug\System.Data.SqlClient.dll
           bin\Debug\AdapterDB3.MSSQL.dll
           bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
-          bin\Debug\System.Data.SqlClient.dll
-          bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:70)
+          bin\Debug\System.Data.SqlClient.dll (TaskId:70)
   Task Parameter:SkipUnchangedFiles=True (TaskId:70)
   Task Parameter:OverwriteReadOnlyFiles=False (TaskId:70)
   Task Parameter:UseHardlinksIfPossible=False (TaskId:70)
   Task Parameter:UseSymboliclinksIfPossible=False (TaskId:70)
   Did not copy from file "C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\runtimes\win\lib\net461\System.Data.SqlClient.dll" to file "bin\Debug\System.Data.SqlClient.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
-  Did not copy from file "C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll" to file "bin\Debug\Oracle.ManagedDataAccess.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
-  Did not copy from file "S:\TestLib\log4net.dll" to file "bin\Debug\log4net.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
-  Did not copy from file "S:\TestLib\Oracle.ManagedDataAccess.dll" to file "bin\Debug\Oracle.ManagedDataAccess.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
-  Copying file from "S:\TestLib\AdapterDB3.MSSQL.dll" to "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll". (TaskId:70)
+  Copying file from "C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll" to "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll". (TaskId:70)
   Did not copy from file "S:\TestLib\System.Data.SqlClient.dll" to file "bin\Debug\System.Data.SqlClient.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
-  Copying file from "S:\TestLib\AdapterDB3.MSSQL.pdb" to "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb". (TaskId:70)
+  Did not copy from file "C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll" to file "bin\Debug\AdapterDB3.MSSQL.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
+  Did not copy from file "C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll" to file "bin\Debug\Oracle.ManagedDataAccess.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
+  Did not copy from file "S:\TestLib\AdapterDB3.MSSQL.dll" to file "bin\Debug\AdapterDB3.MSSQL.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
+  Did not copy from file "S:\TestLib\Oracle.ManagedDataAccess.dll" to file "bin\Debug\Oracle.ManagedDataAccess.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:70)
+  Copying file from "S:\TestLib\log4net.dll" to "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll". (TaskId:70)
   Output Item(s): 
       FileWritesShareable=
+          bin\Debug\AdapterDB3.MSSQL.dll
+          bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
           bin\Debug\System.Data.SqlClient.dll
           bin\Debug\AdapterDB3.MSSQL.dll
           bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
-          bin\Debug\System.Data.SqlClient.dll
-          bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:70)
+          bin\Debug\System.Data.SqlClient.dll (TaskId:70)
   Output Item(s): 
       ReferencesCopiedInThisBuild=
+          bin\Debug\AdapterDB3.MSSQL.dll
+          bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
           bin\Debug\System.Data.SqlClient.dll
           bin\Debug\AdapterDB3.MSSQL.dll
           bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
-          bin\Debug\System.Data.SqlClient.dll
-          bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:70)
+          bin\Debug\System.Data.SqlClient.dll (TaskId:70)
 Done executing task "Copy". (TaskId:70)
 Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
 Task "Touch" (TaskId:71)
@@ -5902,47 +6016,16 @@ Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal
 Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
 Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
 Done building target "CopyFilesToOutputDirectory" in project "AppServer03.csproj".: (TargetId:80)
-Target "IndSoftCopyFilesToLibraryDevelopmentTemporaryDropFolder: (TargetId:81)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Microsoft.Common.targets\ImportBefore\MSBuild.IndSoft.NuGet.LibraryDevelopment2.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "PrepareForRun" depends on it):
-Task "MakeDir" skipped, due to false condition; (!Exists('$(IndSoftNuGetLibraryDevelopmentTemporaryDropFolder)')) was evaluated as (!Exists('S:\TestLib\_temp')).
-Task "Copy" (TaskId:80)
-  Task Parameter:SourceFiles=obj\Debug\AppServer03.exe (TaskId:80)
-  Task Parameter:DestinationFolder=S:\TestLib\_temp (TaskId:80)
-  Task Parameter:SkipUnchangedFiles=True (TaskId:80)
-  Task Parameter:OverwriteReadOnlyFiles=False (TaskId:80)
-  Task Parameter:UseHardlinksIfPossible=False (TaskId:80)
-  Copying file from "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe" to "S:\TestLib\_temp\AppServer03.exe". (TaskId:80)
-Done executing task "Copy". (TaskId:80)
-Task "Message" (TaskId:81)
-  Task Parameter:Importance=High (TaskId:81)
-  Task Parameter:Text=AppServer03 -> S:\TestLib\_temp (TaskId:81)
-  AppServer03 -> S:\TestLib\_temp (TaskId:81)
-Done executing task "Message". (TaskId:81)
-Task "Copy" skipped, due to false condition; ('@(AddModules)' != '') was evaluated as ('' != '').
-Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
-Task "Copy" (TaskId:82)
-  Task Parameter:SourceFiles=obj\Debug\AppServer03.pdb (TaskId:82)
-  Task Parameter:DestinationFolder=S:\TestLib\_temp (TaskId:82)
-  Task Parameter:SkipUnchangedFiles=True (TaskId:82)
-  Task Parameter:OverwriteReadOnlyFiles=False (TaskId:82)
-  Task Parameter:UseHardlinksIfPossible=False (TaskId:82)
-  Copying file from "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb" to "S:\TestLib\_temp\AppServer03.pdb". (TaskId:82)
-Done executing task "Copy". (TaskId:82)
-Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
-Task "Copy" skipped, due to false condition; ('@(IntermediateSatelliteAssembliesWithTargetPath)' != '') was evaluated as ('' != '').
-Task "Copy" skipped, due to false condition; ('@(ReferenceComWrappersToCopyLocal)' != '' or '@(ResolvedIsolatedComModules)' != '' or '@(_DeploymentLooseManifestFile)' != '' or '@(NativeReferenceFile)' != '' ) was evaluated as ('' != '' or '' != '' or '' != '' or '' != '' ).
-Task "Copy" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '@(WinMDExpArtifacts)' != '') was evaluated as ('' != 'true' and '' != '').
-Task "Message" skipped, due to false condition; ('$(SkipCopyWinMDArtifact)' != 'true' and '$(_WindowsMetadataOutputPath)' != '') was evaluated as ('' != 'true' and '' != '').
-Done building target "IndSoftCopyFilesToLibraryDevelopmentTemporaryDropFolder" in project "AppServer03.csproj".: (TargetId:81)
 Target "RunCodeAnalysis" skipped, due to false condition; ('$(RunCodeAnalysisOnThisProject)'=='true') was evaluated as (''=='true').
-Target "PrepareForRun: (TargetId:82)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "CoreBuild" depends on it):
-Done building target "PrepareForRun" in project "AppServer03.csproj".: (TargetId:82)
+Target "PrepareForRun: (TargetId:81)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "CoreBuild" depends on it):
+Done building target "PrepareForRun" in project "AppServer03.csproj".: (TargetId:81)
 Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'WinExe'=='library').
 Target "_CheckForCompileOutputs" skipped. Previously built successfully.
 Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
-Target "_CleanGetCurrentAndPriorFileWrites: (TargetId:83)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "IncrementalClean" depends on it):
+Target "_CleanGetCurrentAndPriorFileWrites: (TargetId:82)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "IncrementalClean" depends on it):
 Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "ReadLinesFromFile" (TaskId:83)
-  Task Parameter:File=obj\Debug\AppServer03.csproj.FileListAbsolute.txt (TaskId:83)
+Task "ReadLinesFromFile" (TaskId:80)
+  Task Parameter:File=obj\Debug\AppServer03.csproj.FileListAbsolute.txt (TaskId:80)
   Output Item(s): 
       _CleanUnfilteredPriorFileWrites=
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
@@ -5960,20 +6043,20 @@ Task "ReadLinesFromFile" (TaskId:83)
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:83)
-Done executing task "ReadLinesFromFile". (TaskId:83)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:80)
+Done executing task "ReadLinesFromFile". (TaskId:80)
 Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "ConvertToAbsolutePath" (TaskId:84)
+Task "ConvertToAbsolutePath" (TaskId:81)
   Task Parameter:
       Paths=
           S:\TestLib\AdapterDB3.MSSQL.dll
                   CopyLocal=true
-                  FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                  FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                   ImageRuntime=v4.0.30319
                   OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={RawFileName}
-                  Version=1.0.0.0
+                  Version=0.1.0.3
           S:\TestLib\log4net.dll
                   CopyLocal=true
                   FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -6158,7 +6241,7 @@ Task "ConvertToAbsolutePath" (TaskId:84)
                   Redist=Microsoft-Windows-CLRCoreComp.4.7.2
                   ReferenceSourceTarget=ResolveAssemblyReference
                   ResolvedFrom={TargetFrameworkDirectory}
-                  Version=4.0.0.0 (TaskId:84)
+                  Version=4.0.0.0 (TaskId:81)
   Output Item(s): 
       _ResolveAssemblyReferenceResolvedFilesAbsolute=
           S:\TestLib\AdapterDB3.MSSQL.dll
@@ -6178,8 +6261,8 @@ Task "ConvertToAbsolutePath" (TaskId:84)
           C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Web.dll
           C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Windows.Forms.dll
           C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.dll
-          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll (TaskId:84)
-Done executing task "ConvertToAbsolutePath". (TaskId:84)
+          C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Xml.Linq.dll (TaskId:81)
+Done executing task "ConvertToAbsolutePath". (TaskId:81)
 Added Item(s): 
     _CleanPriorFileWrites=
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
@@ -6199,34 +6282,37 @@ Added Item(s):
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
 Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "FindUnderPath" (TaskId:85)
-  Task Parameter:Path=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03 (TaskId:85)
+Task "FindUnderPath" (TaskId:82)
+  Task Parameter:Path=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03 (TaskId:82)
   Task Parameter:
       Files=
+          bin\Debug\AdapterDB3.MSSQL.dll
+          bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
           bin\Debug\System.Data.SqlClient.dll
           bin\Debug\AdapterDB3.MSSQL.dll
           bin\Debug\log4net.dll
           bin\Debug\Oracle.ManagedDataAccess.dll
-          bin\Debug\System.Data.SqlClient.dll
-          bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:85)
-  Task Parameter:UpdateToAbsolutePaths=True (TaskId:85)
-  Comparison path is "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03". (TaskId:85)
+          bin\Debug\System.Data.SqlClient.dll (TaskId:82)
+  Task Parameter:UpdateToAbsolutePaths=True (TaskId:82)
+  Comparison path is "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03". (TaskId:82)
   Output Item(s): 
       FileWrites=
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:85)
-Done executing task "FindUnderPath". (TaskId:85)
-Task "FindUnderPath" (TaskId:86)
-  Task Parameter:Path=bin\Debug\ (TaskId:86)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll (TaskId:82)
+Done executing task "FindUnderPath". (TaskId:82)
+Task "FindUnderPath" (TaskId:83)
+  Task Parameter:Path=bin\Debug\ (TaskId:83)
   Task Parameter:
       Files=
           obj\Debug\AppServer03.csprojAssemblyReference.cache
+          obj\Debug\AppServer03.exe.config
           obj\Debug\AppServer03.Form1.resources
           obj\Debug\AppServer03.Properties.Resources.resources
           obj\Debug\AppServer03.csproj.GenerateResource.cache
@@ -6237,33 +6323,36 @@ Task "FindUnderPath" (TaskId:86)
           obj\Debug\AppServer03.pdb
           bin\Debug\AppServer03.exe
           bin\Debug\AppServer03.pdb
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:86)
-  Task Parameter:UpdateToAbsolutePaths=True (TaskId:86)
-  Comparison path is "bin\Debug\". (TaskId:86)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll (TaskId:83)
+  Task Parameter:UpdateToAbsolutePaths=True (TaskId:83)
+  Comparison path is "bin\Debug\". (TaskId:83)
   Output Item(s): 
       _CleanCurrentFileWritesInOutput=
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.pdb
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:86)
-Done executing task "FindUnderPath". (TaskId:86)
-Task "FindUnderPath" (TaskId:87)
-  Task Parameter:Path=obj\Debug\ (TaskId:87)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll (TaskId:83)
+Done executing task "FindUnderPath". (TaskId:83)
+Task "FindUnderPath" (TaskId:84)
+  Task Parameter:Path=obj\Debug\ (TaskId:84)
   Task Parameter:
       Files=
           obj\Debug\AppServer03.csprojAssemblyReference.cache
+          obj\Debug\AppServer03.exe.config
           obj\Debug\AppServer03.Form1.resources
           obj\Debug\AppServer03.Properties.Resources.resources
           obj\Debug\AppServer03.csproj.GenerateResource.cache
@@ -6274,26 +6363,28 @@ Task "FindUnderPath" (TaskId:87)
           obj\Debug\AppServer03.pdb
           bin\Debug\AppServer03.exe
           bin\Debug\AppServer03.pdb
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:87)
-  Task Parameter:UpdateToAbsolutePaths=True (TaskId:87)
-  Comparison path is "obj\Debug\". (TaskId:87)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll (TaskId:84)
+  Task Parameter:UpdateToAbsolutePaths=True (TaskId:84)
+  Comparison path is "obj\Debug\". (TaskId:84)
   Output Item(s): 
       _CleanCurrentFileWritesInIntermediate=
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csprojAssemblyReference.cache
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Form1.resources
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Properties.Resources.resources
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.GenerateResource.cache
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CoreCompileInputs.cache
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb (TaskId:87)
-Done executing task "FindUnderPath". (TaskId:87)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb (TaskId:84)
+Done executing task "FindUnderPath". (TaskId:84)
 Added Item(s): 
     _CleanCurrentFileWritesWithNoReferences=
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
@@ -6302,6 +6393,20 @@ Added Item(s):
                 OriginalItemSpec=obj\Debug\AppServer03.exe
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.pdb
                 OriginalItemSpec=obj\Debug\AppServer03.pdb
+        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=AdapterDB3.MSSQL
+                NuGetPackageVersion=0.1.0.3
+                NuGetSourceType=Package
+                OriginalItemSpec=C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                Private=false
+        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=log4net
+                NuGetPackageVersion=2.0.11
+                NuGetSourceType=Package
+                OriginalItemSpec=C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                Private=false
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
                 NuGetIsFrameworkReference=false
                 NuGetPackageId=Oracle.ManagedDataAccess
@@ -6318,12 +6423,12 @@ Added Item(s):
                 Private=false
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
                 CopyLocal=true
-                FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+                FusionName=AdapterDB3.MSSQL, Version=0.1.0.3, Culture=neutral, PublicKeyToken=null
                 ImageRuntime=v4.0.30319
                 OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
                 ReferenceSourceTarget=ResolveAssemblyReference
                 ResolvedFrom={RawFileName}
-                Version=1.0.0.0
+                Version=0.1.0.3
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
                 CopyLocal=true
                 FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
@@ -6348,13 +6453,10 @@ Added Item(s):
                 ReferenceSourceTarget=ResolveAssemblyReference
                 ResolvedFrom={RawFileName}
                 Version=4.6.1.2
-        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb
-                CopyLocal=true
-                FusionName=
-                OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
-                ResolvedFrom={RawFileName}
-                Version=1.0.0.0
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csprojAssemblyReference.cache
+        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
+                OriginalItemSpec=App.config
+                TargetPath=AppServer03.exe.config
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Form1.resources
                 DependentUpon=Form1.cs
                 ManifestResourceName=AppServer03.Form1
@@ -6377,49 +6479,39 @@ Added Item(s):
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb
 Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-Task "RemoveDuplicates" (TaskId:88)
+Task "RemoveDuplicates" (TaskId:85)
   Output Item(s): 
       _CleanCurrentFileWrites=
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.pdb
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csprojAssemblyReference.cache
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Form1.resources
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Properties.Resources.resources
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.GenerateResource.cache
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CoreCompileInputs.cache
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb (TaskId:88)
-Done executing task "RemoveDuplicates". (TaskId:88)
-Done building target "_CleanGetCurrentAndPriorFileWrites" in project "AppServer03.csproj".: (TargetId:83)
-Target "IncrementalClean: (TargetId:84)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "CoreBuild" depends on it):
-Added Item(s): _CleanOrphanFileWrites=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
-Task "FindUnderPath" (TaskId:89)
-  Task Parameter:Path=bin\Debug\ (TaskId:89)
-  Task Parameter:Files=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:89)
-  Comparison path is "bin\Debug\". (TaskId:89)
-Done executing task "FindUnderPath". (TaskId:89)
-Task "FindUnderPath" (TaskId:90)
-  Task Parameter:Path=obj\Debug\ (TaskId:90)
-  Task Parameter:Files=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:90)
-  Comparison path is "obj\Debug\". (TaskId:90)
-  Output Item(s): _CleanOrphanFileWritesInIntermediate=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:90)
-Done executing task "FindUnderPath". (TaskId:90)
-Task "Delete" (TaskId:91)
-  Task Parameter:Files=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:91)
-  Task Parameter:TreatErrorsAsWarnings=True (TaskId:91)
-  Deleting file "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config". (TaskId:91)
-  Output Item(s): 
-      _CleanOrphanFilesDeleted=
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
-                  OriginalItemSpec=s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:91)
-Done executing task "Delete". (TaskId:91)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb (TaskId:85)
+Done executing task "RemoveDuplicates". (TaskId:85)
+Done building target "_CleanGetCurrentAndPriorFileWrites" in project "AppServer03.csproj".: (TargetId:82)
+Target "IncrementalClean: (TargetId:83)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "CoreBuild" depends on it):
+Task "FindUnderPath" (TaskId:86)
+  Task Parameter:Path=bin\Debug\ (TaskId:86)
+  Comparison path is "bin\Debug\". (TaskId:86)
+Done executing task "FindUnderPath". (TaskId:86)
+Task "FindUnderPath" (TaskId:87)
+  Task Parameter:Path=obj\Debug\ (TaskId:87)
+  Comparison path is "obj\Debug\". (TaskId:87)
+Done executing task "FindUnderPath". (TaskId:87)
+Task "Delete" (TaskId:88)
+  Task Parameter:TreatErrorsAsWarnings=True (TaskId:88)
+Done executing task "Delete". (TaskId:88)
 Added Item(s): 
     _CleanRemainingFileWritesAfterIncrementalClean=
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
@@ -6437,12 +6529,27 @@ Added Item(s):
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb
+        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
                 TargetPath=AppServer03.exe.config
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe
                 OriginalItemSpec=obj\Debug\AppServer03.exe
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.pdb
                 OriginalItemSpec=obj\Debug\AppServer03.pdb
+        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=AdapterDB3.MSSQL
+                NuGetPackageVersion=0.1.0.3
+                NuGetSourceType=Package
+                OriginalItemSpec=C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+                Private=false
+        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
+                NuGetIsFrameworkReference=false
+                NuGetPackageId=log4net
+                NuGetPackageVersion=2.0.11
+                NuGetSourceType=Package
+                OriginalItemSpec=C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+                Private=false
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
                 NuGetIsFrameworkReference=false
                 NuGetPackageId=Oracle.ManagedDataAccess
@@ -6457,29 +6564,10 @@ Added Item(s):
                 NuGetSourceType=Package
                 OriginalItemSpec=C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\runtimes\win\lib\net461\System.Data.SqlClient.dll
                 Private=false
-        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
-                CopyLocal=true
-                FusionName=AdapterDB3.MSSQL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-                ImageRuntime=v4.0.30319
-                OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
-                ReferenceSourceTarget=ResolveAssemblyReference
-                ResolvedFrom={RawFileName}
-                Version=1.0.0.0
-        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
-                CopyLocal=true
-                FusionName=log4net, Version=2.0.12.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
-                ImageRuntime=v4.0.30319
-                OriginalItemSpec=S:\TestLib\log4net.dll
-                ReferenceSourceTarget=ResolveAssemblyReference
-                ResolvedFrom={RawFileName}
-                Version=2.0.12.0
-        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb
-                CopyLocal=true
-                FusionName=
-                OriginalItemSpec=S:\TestLib\AdapterDB3.MSSQL.dll
-                ResolvedFrom={RawFileName}
-                Version=1.0.0.0
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csprojAssemblyReference.cache
+        s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config
+                OriginalItemSpec=App.config
+                TargetPath=AppServer03.exe.config
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Form1.resources
                 DependentUpon=Form1.cs
                 ManifestResourceName=AppServer03.Form1
@@ -6501,7 +6589,7 @@ Added Item(s):
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
         s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb
-Task "RemoveDuplicates" (TaskId:92)
+Task "RemoveDuplicates" (TaskId:89)
   Output Item(s): 
       _CleanUniqueRemainingFileWritesAfterIncrementalClean=
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
@@ -6519,68 +6607,19 @@ Task "RemoveDuplicates" (TaskId:92)
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
           s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:92)
-Done executing task "RemoveDuplicates". (TaskId:92)
-Task "WriteLinesToFile" (TaskId:93)
-  Task Parameter:File=obj\Debug\AppServer03.csproj.FileListAbsolute.txt (TaskId:93)
-  Task Parameter:
-      Lines=
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.pdb
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csprojAssemblyReference.cache
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Form1.resources
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Properties.Resources.resources
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.GenerateResource.cache
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CoreCompileInputs.cache
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb
-          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.pdb (TaskId:93)
-  Task Parameter:Overwrite=True (TaskId:93)
-Done executing task "WriteLinesToFile". (TaskId:93)
-Done building target "IncrementalClean" in project "AppServer03.csproj".: (TargetId:84)
+          s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config (TaskId:89)
+Done executing task "RemoveDuplicates". (TaskId:89)
+Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as ('s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.pdb;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csprojAssemblyReference.cache;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Form1.resources;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Properties.Resources.resources;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.GenerateResource.cache;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CoreCompileInputs.cache;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config'!='s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe.config;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.exe;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AppServer03.pdb;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\AdapterDB3.MSSQL.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\log4net.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\Oracle.ManagedDataAccess.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\bin\Debug\System.Data.SqlClient.dll;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csprojAssemblyReference.cache;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Form1.resources;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.Properties.Resources.resources;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.GenerateResource.cache;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CoreCompileInputs.cache;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.csproj.CopyComplete;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.pdb;s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\obj\Debug\AppServer03.exe.config').
+Done building target "IncrementalClean" in project "AppServer03.csproj".: (TargetId:83)
 Target "PostBuildEvent" skipped, due to false condition; ('$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)' != 'OnOutputUpdated' or '$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)')) was evaluated as ('' != '' and ('' != 'OnOutputUpdated' or '' != '')).
-Target "CoreBuild: (TargetId:85)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "Build" depends on it):
-Done building target "CoreBuild" in project "AppServer03.csproj".: (TargetId:85)
-Target "AfterBuild: (TargetId:86)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "Build" depends on it):
-Done building target "AfterBuild" in project "AppServer03.csproj".: (TargetId:86)
-Target "IndSoftCopyToDevLibrary: (TargetId:87)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Microsoft.Common.targets\ImportBefore\MSBuild.IndSoft.NuGet.LibraryDevelopment2.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "Build" depends on it):
-Task "Message" (TaskId:94)
-  Task Parameter:Text=Copying libraries to dropfolder S:\TestLib (TaskId:94)
-  Task Parameter:Importance=High (TaskId:94)
-  Copying libraries to dropfolder S:\TestLib (TaskId:94)
-Done executing task "Message". (TaskId:94)
-Added Item(s): 
-    LibraryDevFiles=
-        S:\TestLib\_temp\AdapterDB3.MSSQL.dll
-        S:\TestLib\_temp\AdapterDB3.MSSQL.pdb
-        S:\TestLib\_temp\AppServer03.exe
-        S:\TestLib\_temp\AppServer03.pdb
-Task "MakeDir" skipped, due to false condition; (!Exists('$(IndSoftLibraryDevDropFolder)')) was evaluated as (!Exists('S:\TestLib')).
-Task "Copy" (TaskId:95)
-  Task Parameter:
-      SourceFiles=
-          S:\TestLib\_temp\AdapterDB3.MSSQL.dll
-          S:\TestLib\_temp\AdapterDB3.MSSQL.pdb
-          S:\TestLib\_temp\AppServer03.exe
-          S:\TestLib\_temp\AppServer03.pdb (TaskId:95)
-  Task Parameter:DestinationFolder=S:\TestLib\ (TaskId:95)
-  Task Parameter:SkipUnchangedFiles=True (TaskId:95)
-  Did not copy from file "S:\TestLib\_temp\AdapterDB3.MSSQL.pdb" to file "S:\TestLib\AdapterDB3.MSSQL.pdb" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:95)
-  Did not copy from file "S:\TestLib\_temp\AdapterDB3.MSSQL.dll" to file "S:\TestLib\AdapterDB3.MSSQL.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match. (TaskId:95)
-  Copying file from "S:\TestLib\_temp\AppServer03.pdb" to "S:\TestLib\AppServer03.pdb". (TaskId:95)
-  Copying file from "S:\TestLib\_temp\AppServer03.exe" to "S:\TestLib\AppServer03.exe". (TaskId:95)
-Done executing task "Copy". (TaskId:95)
-Done building target "IndSoftCopyToDevLibrary" in project "AppServer03.csproj".: (TargetId:87)
+Target "CoreBuild: (TargetId:84)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "Build" depends on it):
+Done building target "CoreBuild" in project "AppServer03.csproj".: (TargetId:84)
+Target "AfterBuild: (TargetId:85)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (target "Build" depends on it):
+Done building target "AfterBuild" in project "AppServer03.csproj".: (TargetId:85)
 Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
 Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-Target "Build: (TargetId:88)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (entry point):
-Done building target "Build" in project "AppServer03.csproj".: (TargetId:88)
+Target "Build: (TargetId:86)" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (entry point):
+Done building target "Build" in project "AppServer03.csproj".: (TargetId:86)
 Done Building Project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj" (default targets).
 
 Build: (TargetId:5)
@@ -6606,132 +6645,130 @@ Done Building Project "s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03.sln"
 
 
 Project Evaluation Performance Summary:
-      115 ms  s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj   1 calls
+      120 ms  s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj   1 calls
 
 Project Performance Summary:
-      878 ms  s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj   1 calls
-     1117 ms  s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03.sln   1 calls
+     1670 ms  s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03\AppServer03.csproj   1 calls
+     1919 ms  s:\GitHub03\HelloWorld3a\src\AppServer03\AppServer03.sln   1 calls
 
 Target Performance Summary:
-        0 ms  AfterResGen                                1 calls
-        0 ms  AfterMarkupCompilePass1                    1 calls
-        0 ms  CopyAdditionalFiles                        1 calls
-        0 ms  GetTargetPath                              1 calls
-        0 ms  CreateCustomManifestResourceNames          1 calls
-        0 ms  PrepareResourceNames                       1 calls
-        0 ms  BeforeResGen                               1 calls
         0 ms  AfterBuild                                 1 calls
+        0 ms  FileClassification                         1 calls
+        0 ms  CreateCustomManifestResourceNames          1 calls
+        0 ms  _CopySourceItemsToOutputDirectory          1 calls
+        0 ms  BeforeResGen                               1 calls
+        0 ms  CoreBuild                                  1 calls
+        0 ms  AfterResGen                                1 calls
         0 ms  ResGen                                     1 calls
         0 ms  PrepareResources                           1 calls
         0 ms  SetWin32ManifestProperties                 1 calls
+        0 ms  _GenerateCompileInputs                     1 calls
         0 ms  GenerateMSBuildEditorConfigFileShouldRun   1 calls
-        0 ms  ExpressionBuildExtension                   1 calls
         0 ms  GenerateMSBuildEditorConfigFile            1 calls
-        0 ms  BeforeCompile                              1 calls
+        0 ms  AfterMarkupCompilePass1                    1 calls
+        0 ms  _SetTargetFrameworkMonikerAttribute        1 calls
         0 ms  _BeforeVBCSCoreCompile                     1 calls
         0 ms  ComputeRunAnalyzers                        1 calls
-        0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
         0 ms  AfterCompile                               1 calls
         0 ms  AfterCompileWinFX                          1 calls
         0 ms  _AfterCompileWinFXInternal                 1 calls
         0 ms  Compile                                    1 calls
+        0 ms  _GenerateSatelliteAssemblyInputs           1 calls
         0 ms  ComputeIntermediateSatelliteAssemblies     1 calls
         0 ms  CreateSatelliteAssemblies                  1 calls
         0 ms  GetTargetPathWithTargetPlatformMoniker     1 calls
-        0 ms  _SetTargetFrameworkMonikerAttribute        1 calls
+        0 ms  GetTargetPath                              1 calls
+        0 ms  GetCopyToOutputDirectoryXamlAppDefs        1 calls
+        0 ms  BeforeCompile                              1 calls
+        0 ms  ExpressionBuildExtension                   1 calls
+        0 ms  PrepareResourceNames                       1 calls
         0 ms  ResolveReferences                          1 calls
-        0 ms  _PopulateCommonStateForGetCopyToOutputDirectoryItems   1 calls
-        0 ms  AfterResolveReferences                     1 calls
-        0 ms  ValidateToolsVersions                      1 calls
-        0 ms  ValidateProjects                           1 calls
-        0 ms  CoreBuild                                  1 calls
         0 ms  BeforeBuild                                1 calls
-        0 ms  BuildOnlySettings                          1 calls
         0 ms  BeforeResolveReferences                    1 calls
         0 ms  _SplitProjectReferencesByFileExistence     1 calls
-        0 ms  ExpandSDKReferences                        1 calls
-        0 ms  PrepareForRun                              1 calls
+        0 ms  ValidationExtension                        1 calls
         0 ms  PrepareProjectReferences                   1 calls
-        0 ms  _CopySourceItemsToOutputDirectory          1 calls
-        0 ms  GenerateBindingRedirectsUpdateAppConfig    1 calls
+        0 ms  ResolveSDKReferences                       1 calls
+        0 ms  ExpandSDKReferences                        1 calls
+        0 ms  BuildOnlySettings                          1 calls
+        0 ms  PrepareForRun                              1 calls
+        0 ms  ValidateToolsVersions                      1 calls
+        0 ms  ValidateProjects                           1 calls
         0 ms  _RemoveZipFileSuggestedRedirect            1 calls
-        0 ms  _GetCopyToOutputDirectoryItemsFromThisProject   1 calls
-        1 ms  ResolveSDKReferences                       1 calls
-        1 ms  FileClassification                         1 calls
-        1 ms  GetFrameworkPaths                          1 calls
-        1 ms  CleanXsdCodeGen                            1 calls
-        1 ms  GetCopyToOutputDirectoryItems              1 calls
-        1 ms  _GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences   1 calls
-        1 ms  ResolveCodeAnalysisRuleSet                 1 calls
-        1 ms  _GenerateSatelliteAssemblyInputs           1 calls
-        1 ms  _GenerateCompileInputs                     1 calls
-        1 ms  ImplicitlyExpandDesignTimeFacades          1 calls
-        1 ms  ValidationExtension                        1 calls
+        0 ms  ImplicitlyExpandDesignTimeFacades          1 calls
+        0 ms  AfterResolveReferences                     1 calls
+        1 ms  _GetCopyToOutputDirectoryItemsFromThisProject   1 calls
+        1 ms  CopyAdditionalFiles                        1 calls
         1 ms  _CheckForCompileOutputs                    1 calls
-        2 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
+        1 ms  CleanXsdCodeGen                            1 calls
+        1 ms  _PopulateCommonStateForGetCopyToOutputDirectoryItems   1 calls
+        1 ms  ImplicitlyExpandNETStandardFacades         1 calls
+        1 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
+        1 ms  ResolveCodeAnalysisRuleSet                 1 calls
+        1 ms  _GetCopyToOutputDirectoryItemsFromTransitiveProjectReferences   1 calls
+        2 ms  GetCopyToOutputDirectoryItems              1 calls
+        2 ms  IncrementalClean                           1 calls
         2 ms  _SetEmbeddedWin32ManifestProperties        1 calls
-        2 ms  AssignTargetPaths                          1 calls
         2 ms  AssignProjectConfiguration                 1 calls
-        3 ms  PreXsdCodeGen                              1 calls
-        4 ms  CreateManifestResourceNames                1 calls
-        4 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
-        5 ms  GetReferenceAssemblyPaths                  1 calls
+        2 ms  PreXsdCodeGen                              1 calls
+        2 ms  GetFrameworkPaths                          1 calls
+        2 ms  CreateManifestResourceNames                1 calls
+        3 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+        3 ms  AssignTargetPaths                          1 calls
+        5 ms  SplitResourcesByCulture                    1 calls
         5 ms  _GenerateCompileDependencyCache            1 calls
-        6 ms  IncrementalClean                           1 calls
-        6 ms  FindReferenceAssembliesForReferences       1 calls
-        7 ms  ImplicitlyExpandNETStandardFacades         1 calls
-        8 ms  GenerateTargetFrameworkMonikerAttribute    1 calls
+        6 ms  GenerateTargetFrameworkMonikerAttribute    1 calls
+        7 ms  GetReferenceAssemblyPaths                  1 calls
+        7 ms  _CleanGetCurrentAndPriorFileWrites         1 calls
         8 ms  PrepareForBuild                            1 calls
-        8 ms  GenerateBindingRedirects                   1 calls
-        8 ms  IndSoftCopyToDevLibrary                    1 calls
-        9 ms  IndSoftCopyFilesToLibraryDevelopmentTemporaryDropFolder   1 calls
-       10 ms  _CopyAppConfigFile                         1 calls
-       11 ms  CopyFilesToOutputDirectory                 1 calls
-       14 ms  _CleanGetCurrentAndPriorFileWrites         1 calls
-       15 ms  _CopyFilesMarkedCopyLocal                  1 calls
-       20 ms  ResolveProjectReferences                   1 calls
-       30 ms  SplitResourcesByCulture                    1 calls
+       10 ms  CopyFilesToOutputDirectory                 1 calls
+       10 ms  FindReferenceAssembliesForReferences       1 calls
+       11 ms  GenerateBindingRedirects                   1 calls
+       14 ms  _CopyFilesMarkedCopyLocal                  1 calls
+       15 ms  _CopyAppConfigFile                         1 calls
+       24 ms  ResolveProjectReferences                   1 calls
+       26 ms  GenerateBindingRedirectsUpdateAppConfig    1 calls
+       30 ms  _HandlePackageFileConflicts                1 calls
        35 ms  ValidateSolutionConfiguration              1 calls
-       54 ms  _HandlePackageFileConflicts                1 calls
-       94 ms  CoreResGen                                 1 calls
-       95 ms  ResolveNuGetPackageAssets                  1 calls
-       99 ms  ResolveAssemblyReferences                  1 calls
-       99 ms  ReplaceNugetReferences                     1 calls
-      208 ms  CoreCompile                                1 calls
-     1060 ms  Build                                      2 calls
+       76 ms  ResolveNuGetPackageAssets                  1 calls
+       86 ms  CoreResGen                                 1 calls
+       97 ms  ReplaceNugetReferences                     1 calls
+      148 ms  ResolveAssemblyReferences                  1 calls
+     1032 ms  CoreCompile                                1 calls
+     1862 ms  Build                                      2 calls
 
 Task Performance Summary:
-        0 ms  ResolveCodeAnalysisRuleSet                 1 calls
-        1 ms  FindUnderPath                              5 calls
-        1 ms  RemoveDuplicates                           2 calls
+        0 ms  Delete                                     2 calls
         1 ms  GetFrameworkPath                           1 calls
+        1 ms  RemoveDuplicates                           2 calls
+        1 ms  CreateCSharpManifestResourceName           1 calls
+        1 ms  ReadLinesFromFile                          1 calls
+        1 ms  AssignTargetPath                           7 calls
         1 ms  Hash                                       1 calls
-        1 ms  AssignProjectConfiguration                 1 calls
-        2 ms  AssignTargetPath                           7 calls
-        2 ms  FindAppConfigFile                          1 calls
-        3 ms  ConvertToAbsolutePath                      1 calls
-        3 ms  Touch                                      1 calls
-        3 ms  CreateCSharpManifestResourceName           1 calls
+        1 ms  ResolveCodeAnalysisRuleSet                 1 calls
+        2 ms  AssignProjectConfiguration                 1 calls
+        2 ms  ConvertToAbsolutePath                      1 calls
+        2 ms  AssignCulture                              1 calls
         3 ms  CallTarget                                 3 calls
+        3 ms  FindUnderPath                              5 calls
+        3 ms  Touch                                      1 calls
+        4 ms  FindAppConfigFile                          1 calls
         4 ms  MakeDir                                    1 calls
-        5 ms  Delete                                     2 calls
-        5 ms  WriteLinesToFile                           4 calls
-        5 ms  GetReferenceAssemblyPaths                  1 calls
-        5 ms  ReadLinesFromFile                          1 calls
-        7 ms  GenerateBindingRedirects                   1 calls
-       27 ms  AssignCulture                              1 calls
-       31 ms  Copy                                       6 calls
-       37 ms  Message                                   44 calls
-       49 ms  ResolvePackageFileConflicts                1 calls
-       57 ms  IndSoftReplaceNugetReferences              1 calls
-       84 ms  GenerateResource                           1 calls
-       90 ms  ResolveNuGetPackageAssets                  1 calls
-       98 ms  ResolveAssemblyReference                   1 calls
-      196 ms  Csc                                        1 calls
-     1058 ms  MSBuild                                    2 calls
+        4 ms  WriteLinesToFile                           3 calls
+        6 ms  GetReferenceAssemblyPaths                  1 calls
+       10 ms  GenerateBindingRedirects                   1 calls
+       21 ms  Copy                                       3 calls
+       25 ms  ResolvePackageFileConflicts                1 calls
+       34 ms  Message                                   42 calls
+       52 ms  IndSoftReplaceNugetReferences              1 calls
+       72 ms  ResolveNuGetPackageAssets                  1 calls
+       76 ms  GenerateResource                           1 calls
+      147 ms  ResolveAssemblyReference                   1 calls
+     1023 ms  Csc                                        1 calls
+     1856 ms  MSBuild                                    2 calls
 
 Build succeeded.
     0 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:01.36
+Time Elapsed 00:00:02.13

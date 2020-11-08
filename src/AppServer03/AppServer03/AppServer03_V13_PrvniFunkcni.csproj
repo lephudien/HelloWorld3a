@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED82AF16-7A67-4ED9-BF9A-CF57C7687557}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AppServer03</RootNamespace>
+    <AssemblyName>AppServer03</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AdapterDB3.MSSQL">
+      <Version>0.1.0.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- NAT pokus 01 TestTarget START-->
+  <PropertyGroup>
+    <IndSoftLibraryDevFolder>S:\TestLib</IndSoftLibraryDevFolder>
+  </PropertyGroup>
+	<Target Name="MujTest01BeforeReplacingReferences" BeforeTargets="ResolveAssemblyReferences" DependsOnTargets="ExpandSDKReferences">
+		<Message Importance="High"  Text="Ahoj, MujTest01BeforeReplacingReferences"/>
+		<Message Importance="High" Text="Pouzite reference puvodni: %(Reference.FileName) + %(Reference.Identity)"/>
+	</Target>
+	
+	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftReplaceReference" AssemblyFile="S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll"/>
+	<Target Name="MujTest01zTestTask" AfterTargets="MujTest01BeforeReplacingReferences">
+		<Message Importance="High"  Text="MujTest01zTestTask"/>
+		<IndSoftReplaceReference ReferencePathOrg="C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll" LibraryDevFolder="$(IndSoftLibraryDevFolder)">
+			<Output TaskParameter="ReferencePathNew" PropertyName="ReferencePathNewFromTask" />
+		</IndSoftReplaceReference>
+		<Message Importance="High" Text="prop:ReferencePathNew=$(ReferencePathNewFromTask)" />
+  </Target>
+	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftMakeDir" AssemblyFile="S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll"/>
+	<PropertyGroup>
+		<OutputDirectory>\Output\</OutputDirectory>
+  </PropertyGroup>
+	<Target Name="CreateDirectories" AfterTargets="MujTest01BeforeReplacingReferences">
+			<IndSoftMakeDir Directories="$(OutputDirectory)"/>
+	</Target>
+	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftReplaceReference2" AssemblyFile="S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll"/>
+	<Target Name="MujTest01xTestTask" AfterTargets="MujTest01zTestTask">
+		<Message Importance="High"  Text="MujTest01xTestTask"/>
+		<IndSoftReplaceReference2 ReferencesIn="@(Reference)" FolderLibraryDev="$(IndSoftLibraryDevFolder)" FolderNeedReplaceMask=".nuget\packages">
+		  <!--
+			<Output TaskParameter="OneReferenceOut" PropertyName="OneReferenceOutFromTask"/>
+			-->
+			<Output TaskParameter="referencesOut" PropertyName="ReferencesOutFromTask"/>
+		</IndSoftReplaceReference2>
+		<!--
+		<Message Importance="High" Text="prop:OneReferenceOutFromTask=$(OneReferenceOutFromTask)" />
+		-->
+		<Message Importance="High" Text="prop:OneReferenceOutFromTask=$(ReferencesOutFromTask)" />
+    <ItemGroup>
+			<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
+			<!--
+			<Reference Include="$(OneReferenceOutFromTask)"/>
+			-->
+			<Reference Include="$(ReferencesOutFromTask)"/>
+		</ItemGroup>		
+  </Target>
+	
+	<!---
+  <Target Name="MujTest01yTestTask" AfterTargets="MujTest01BeforeReplacingReferences">
+		<Message Importance="High"  Text="MujTest01yTestTask"/>
+		<IndSoftReplaceReference ReferencePathOrg="%(Reference.Identity)" LibraryDevFolder="$(IndSoftLibraryDevFolder)">
+			<Output TaskParameter="ReferencePathNew" PropertyName="ReferencePathNewFromTask" />
+		</IndSoftReplaceReference>
+		<Message Importance="High" Text="prop:ReferencePathNew=$(ReferencePathNewFromTask)" />
+  </Target>
+	-->
+	<Target Name="AssignLinkMetadata" AfterTargets="MujTest04ShowFinalReferences">
+		<Message Importance="High"  Text="MujTest01yTestTask"/>
+    <!-- NONE ITEMS -->
+    <AssignLinkMetadata Items="@(Reference)">
+      <Output TaskParameter="OutputItems" ItemName="_Temp" />
+    </AssignLinkMetadata>
+		<Message Importance="High" Text="Vystup _Temp=@(_Temp)" />
+    
+		<!--
+    <ItemGroup>
+      <None Remove="@(_Temp)" />
+      <None Include="@(_Temp)" />
+      <_Temp Remove="@(_Temp)" />
+    </ItemGroup>
+		-->
+	</Target>
+	<ItemGroup>
+    <TestItem Include="test1" />
+    <TestItem Include="test2" />
+    <TestItem Include="test3" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TestProperty>Property Value</TestProperty>
+  </PropertyGroup>
+
+  <Target Name="TestMessage" AfterTargets="Build" >
+
+    <!-- Use $(Property Name) to reference a property -->
+    <Message Text="$(TestProperty)" Importance="high"/>
+
+    <!-- Use @(Item Name) to output a semi-colon
+         separated list of items on one line      -->
+    <Message Text="@(TestItem)" Importance="high"/>
+
+    <!-- Use %(Item Name.Metadata Property Name) to 
+         call the Message task once for each item.   -->
+    <!-- This will output each item on a separate line -->
+    <Message Text="TestItemOutput: %(TestItem.Identity)" Importance="high"/>
+
+  </Target>
+	<PropertyGroup>
+		<IndSoftReplaceReferenceMask>.nuget\packages\</IndSoftReplaceReferenceMask>
+		<IndSoftReplaceReferenceNewFolder>S:\NoExist</IndSoftReplaceReferenceNewFolder>
+	</PropertyGroup>
+	<Target Name="TestUpdateMetaData" AfterTargets="MujTest04ShowFinalReferences">
+		<Message Importance="High"  Text="TestUpdateMetaData"/>
+		<ItemGroup>
+      <Reference Update="@(Reference)"  Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))">
+			  <!-- <Message Text="FullPath: "/> -->
+        <NewReferencePath>$(IndSoftReplaceReferenceNewFolder)\%(FileName)%(Extension)</NewReferencePath>
+      </Reference>  
+    </ItemGroup>
+		<Message Importance="High" Text="prop:ReferencePathNew2=$(ReferencePathNewFromTask2)" />
+	</Target>
+	<Target Name="WriteCollectionToFileAll" AfterTargets="MujTest04ShowFinalReferences">
+    <WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileAll.txt" Lines="@(Reference)" Overwrite="true"/>
+	</Target>
+	<Target Name="WriteCollectionToFileFiltr" AfterTargets="MujTest04ShowFinalReferences">
+		<WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="false" Condition="%(FullPath) == 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' OR %(FullPath) == 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll'"/>
+	  <!--
+		<WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="false" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
+    <WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="true" Condition="%(FullPath) == 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll'"/>
+		<WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileFiltr.txt" Lines="@(Reference)" Overwrite="true" Condition="%(FullPath) == 'C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll' OR %(FullPath) == 'C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll'"/>
+		-->
+	</Target>
+	<Target Name="ReferenceRemoveTest" AfterTargets="WriteCollectionToFileFiltr">
+		<ItemGroup>
+			<!--
+			<Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
+			<Reference Remove="**"/>
+			-->
+			<!--
+				<Reference Include="C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll"/>
+			-->
+			<!--
+			<Reference Include="C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll"/>
+			-->
+			<!-- FUNGUJICI
+				<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains('.nuget\packages\'))"/>
+				<Reference Include="S:\TestLib\AdapterDB3.MSSQL.dll;S:\TestLib\log4net.dll;S:\TestLib\Oracle.ManagedDataAccess.dll;S:\TestLib\System.Data.SqlClient.dll"/>
+			-->
+		</ItemGroup>
+	</Target>
+	<Target Name="WriteCollectionToFileAllAfterRemove" AfterTargets="ReferenceRemoveTest">
+    <WriteLinesToFile File="s:\GitHub03\HelloWorld3a\src\AppServer03\SampleFileAllAfterRemove.txt" Lines="@(Reference)" Overwrite="true"/>
+	</Target>
+	<Target Name="MujTest04ShowFinalReferences2" AfterTargets="TestUpdateMetaData">
+		<Message Importance="High"  Text="MujTest04ShowFinalReferences"/>
+		<Message Importance="High" Text="Pouzite reference final2: %(Reference.FullPath) + %(Reference.NewReferencePath)"/>
+	</Target>
+	<Target Name="MujTest04ShowFinalReferences3" AfterTargets="MujTest04ShowFinalReferences2">
+			<Message Importance="High" Text="Pouzite reference final3: %(Reference.FullPath) + %(Reference.NewReferencePath)"/>
+	</Target>
+	<Target Name="MujTest02ReplacingReferences" AfterTargets="MujTest01BeforeReplacingReferences">
+    <Message Importance="High"  Text="Ahoj, MujTest02ReplacingReferences"/>
+		<ItemGroup>
+		  <!--
+			<Reference Condition=" '%(Identity)' != '.nuget\packages\'">
+				<Reference>
+					<Reference Remove="$(Identity)"/>
+					<Reference Include="$(IndSoftLibraryDevFolder)" + %(FileName)"/>
+			</Reference>
+			-->
+		</ItemGroup>
+		<!--
+		<Message Importance="high" Text="References: @(Reference->'%(Identity) is %(Identity); needed change=%(NeededChangeNugetReference)')"/>
+		-->
+  </Target>
+	<Target Name="MujTest03AddReferences" AfterTargets="MujTest02ReplacingReferences">
+		<Message Importance="High"  Text="MujTest03AddReferences"/>
+		<ItemGroup>
+      <!-- Remove any references which we have added as explicit reference so that we do not get duplicates. We need to make sure we do not have duplicates
+         because this confuses the IDE  when it tries to compare the list of references passed in to the list of resolved references. If it does not match then the
+         ide will show one of the references as not resolved, this will not break the build but is a display issue -->
+			<!--
+			<Reference Remove="C:\Users\tuana\.nuget\packages\**"/>
+			<Reference Include="S:\TestLib\*.DLL"/>
+			-->
+			<!--
+			<Reference Include="$(IndSoftLibraryDevFolder)\*.DLL"/>
+			-->
+    </ItemGroup>
+	</Target>
+	<Target Name="MujTest04ShowFinalReferences" AfterTargets="MujTest03AddReferences">
+		<Message Importance="High" Text="MujTest04ShowFinalReferences"/>
+		<Message Importance="High" Text="Pouzite reference final: %(Reference.FullPath) + %(Reference.Identity)"/>
+	</Target>
+  <!-- NAT pokus 01 TestTarget END-->
+  <!-- NAT pokus 02 TestTarget START-->
+	<!-- NAT pokus 02 - Presun na ImportBefore
+  <PropertyGroup>
+    <IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>S:\TestLib\_temp</IndSoftNuGetLibraryDevelopmentTemporaryDropFolder>
+  </PropertyGroup>
+  <Import Project="s:\CEPS\DispecerskyDenik\v1.0\Main\packages\IndSoft.NuGet.Support.1.0.7131.13344\MSBuild\MSBuild.IndSoft.NuGet.LibraryDevelopment2.targets"/>
+  -->
+  <!--NAT pokus 02 TestTarget END-->
+  <!-- NAT pokus 03 TestTarget START-->
+    <Target Name="MujTest3" AfterTargets="AfterBuild">
+      <Message Importance="High"  Text="Ahoj3"/>
+    </Target>
+  <!--NAT pokus 03 TestTarget END-->
+</Project>
