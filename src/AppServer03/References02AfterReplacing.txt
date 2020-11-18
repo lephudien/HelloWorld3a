@@ -1,10 +1,10 @@
 System.Deployment
 System.Drawing
 System.Windows.Forms
-S:\TestLib\AdapterDB3.MSSQL.dll
-S:\TestLib\log4net.dll
-S:\TestLib\Oracle.ManagedDataAccess.dll
-S:\TestLib\System.Data.SqlClient.dll
+C:\Users\tuana\.nuget\packages\adapterdb3.mssql\0.1.0.3\lib\net472\AdapterDB3.MSSQL.dll
+C:\Users\tuana\.nuget\packages\log4net\2.0.11\lib\net45\log4net.dll
+C:\Users\tuana\.nuget\packages\oracle.manageddataaccess\19.9.0\lib\net40\Oracle.ManagedDataAccess.dll
+C:\Users\tuana\.nuget\packages\system.data.sqlclient\4.8.2\ref\net461\System.Data.SqlClient.dll
 Microsoft.CSharp
 System
 System.Configuration
