@@ -1,14 +1,16 @@
+Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL
 System
 System.Core
 System.Xml.Linq
 System.Data.DataSetExtensions
 Microsoft.CSharp
 System.Net.Http
+S:\TestLib\log4net.dll
+C:\Microsoft\Xamarin\NuGet\nunit\3.12.0\lib\net45\nunit.framework.dll
+S:\TestLib\Oracle.ManagedDataAccess.dll
+S:\TestLib\System.Data.SqlClient.dll
 System.Configuration
 System.Web
 System.Data
 System.Xml
 mscorlib
-S:\TestLib\log4net.dll
-S:\TestLib\Oracle.ManagedDataAccess.dll
-S:\TestLib\System.Data.SqlClient.dll

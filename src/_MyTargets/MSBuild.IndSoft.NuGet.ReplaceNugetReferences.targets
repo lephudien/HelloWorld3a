@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <IndSoftLibraryDevFolder>S:\TestLib</IndSoftLibraryDevFolder>
+    <IndSoftLibraryDevDropFolder>S:\TestLib</IndSoftLibraryDevDropFolder>
 		<IndSoftNugetCacheFolderMask>.nuget\packages</IndSoftNugetCacheFolderMask>
   </PropertyGroup>
-	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftReplaceNugetReferences" AssemblyFile="S:\IndSoft\Tools\IndSoft.NuGet\MSBuild.IndSoft.NuGet.Tasks\bin\Debug\MSBuild.IndSoft.NuGet.Tasks.dll"/>
+	<UsingTask TaskName="MSBuild.IndSoft.NuGet.Tasks.IndSoftReplaceNugetReferences" AssemblyFile="S:\TestLib\MSBuild.IndSoft.NuGet.Tasks.dll"/>
 	<Target Name="ReplaceNugetReferences" BeforeTargets="ResolveAssemblyReferences" DependsOnTargets="ExpandSDKReferences">
 		<Message Importance="High" Text="ReplaceNugetReferences"/>
 		<!-- Vypis puvodni reference pred nahrazenim -->
 		<Message Importance="High" Text="Pouzite reference puvodni: %(Reference.Identity)"/>
 		<WriteLinesToFile File="$(SolutionDir)References01BeforeReplacing.txt" Lines="@(Reference)" Overwrite="true"/>
-		<IndSoftReplaceNugetReferences ReferencesIn="@(Reference)" FolderLibraryDev="$(IndSoftLibraryDevFolder)" FolderNugetCacheNeedReplaceMask="$(IndSoftNugetCacheFolderMask)">
+		<IndSoftReplaceNugetReferences ReferencesIn="@(Reference)" FolderLibraryDev="$(IndSoftLibraryDevDropFolder)" FolderNugetCacheNeedReplaceMask="$(IndSoftNugetCacheFolderMask)">
 		  <Output TaskParameter="referencesOut" PropertyName="ReferencesOutFromTask"/>
 		</IndSoftReplaceNugetReferences>
 		<Message Importance="High" Text="OutputResults_ReferencesOutFromTask=$(ReferencesOutFromTask)" />
     <ItemGroup>
 		  <!-- Odstraneni reference v NugetCache -->
+			<!--
 			<Reference Remove="@(Reference)" Condition="$([System.String]::Copy(%(FullPath)).Contains($(IndSoftNugetCacheFolderMask)))"/>
+			-->
+			<Reference Remove="@(Reference)"/>
 			<!-- Pridani reference z Tasku IndSoftReplaceNugetReferences -->
 			<Reference Include="$(ReferencesOutFromTask)"/>
 		</ItemGroup>		
